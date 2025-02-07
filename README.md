@@ -1,7 +1,6 @@
 LOUDR for CS206
 
 TODO:
-- Add other panels for categories (and add its features)
-- Create "My Cart"
-- Add price calculation functionality to "My Cart"
-- Add functionality to add various of each item to cart
+- Add functionality to remove single item from cart
+- Finish panel for studio/live items
+- Add function to buttons in home panel
