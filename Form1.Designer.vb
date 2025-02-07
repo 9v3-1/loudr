@@ -69,13 +69,13 @@ Partial Class Form1
         btnStudio = New Button()
         btnDrums = New Button()
         pnlHome = New Panel()
+        btnHomeAbout = New Button()
+        lblHomeDesc = New Label()
+        lblLoudrHome = New Label()
         pnlAbout = New Panel()
         lblAbout1 = New Label()
         lblAbout = New Label()
         Label3 = New Label()
-        btnHomeAbout = New Button()
-        lblHomeDesc = New Label()
-        lblLoudrHome = New Label()
         lblGuitar = New Label()
         pnlStrat = New Panel()
         Label8 = New Label()
@@ -797,54 +797,6 @@ Partial Class Form1
         pnlHome.Size = New Size(1443, 743)
         pnlHome.TabIndex = 5
         ' 
-        ' pnlAbout
-        ' 
-        pnlAbout.Anchor = AnchorStyles.Top
-        pnlAbout.Controls.Add(lblAbout1)
-        pnlAbout.Controls.Add(lblAbout)
-        pnlAbout.Controls.Add(Label3)
-        pnlAbout.Location = New Point(0, 0)
-        pnlAbout.Name = "pnlAbout"
-        pnlAbout.Size = New Size(1443, 806)
-        pnlAbout.TabIndex = 6
-        pnlAbout.Visible = False
-        ' 
-        ' lblAbout1
-        ' 
-        lblAbout1.Anchor = AnchorStyles.None
-        lblAbout1.FlatStyle = FlatStyle.Flat
-        lblAbout1.Font = New Font("Cascadia Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblAbout1.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        lblAbout1.Location = New Point(466, 610)
-        lblAbout1.Name = "lblAbout1"
-        lblAbout1.Size = New Size(515, 58)
-        lblAbout1.TabIndex = 2
-        lblAbout1.Text = "In this application you can purchase all your musical equiment needed at your leisure."
-        ' 
-        ' lblAbout
-        ' 
-        lblAbout.Anchor = AnchorStyles.None
-        lblAbout.FlatStyle = FlatStyle.Flat
-        lblAbout.Font = New Font("Cascadia Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblAbout.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        lblAbout.Location = New Point(458, 175)
-        lblAbout.Name = "lblAbout"
-        lblAbout.Size = New Size(589, 339)
-        lblAbout.TabIndex = 1
-        lblAbout.Text = resources.GetString("lblAbout.Text")
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Label3.Location = New Point(479, 0)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(502, 127)
-        Label3.TabIndex = 0
-        Label3.Text = "ABOUT US"
-        Label3.TextAlign = ContentAlignment.MiddleCenter
-        ' 
         ' btnHomeAbout
         ' 
         btnHomeAbout.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
@@ -880,6 +832,54 @@ Partial Class Form1
         lblLoudrHome.Size = New Size(695, 264)
         lblLoudrHome.TabIndex = 0
         lblLoudrHome.Text = "LOUDR"
+        ' 
+        ' pnlAbout
+        ' 
+        pnlAbout.Anchor = AnchorStyles.Top
+        pnlAbout.Controls.Add(lblAbout1)
+        pnlAbout.Controls.Add(lblAbout)
+        pnlAbout.Controls.Add(Label3)
+        pnlAbout.Location = New Point(0, 63)
+        pnlAbout.Name = "pnlAbout"
+        pnlAbout.Size = New Size(1443, 743)
+        pnlAbout.TabIndex = 6
+        pnlAbout.Visible = False
+        ' 
+        ' lblAbout1
+        ' 
+        lblAbout1.Anchor = AnchorStyles.None
+        lblAbout1.FlatStyle = FlatStyle.Flat
+        lblAbout1.Font = New Font("Cascadia Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblAbout1.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        lblAbout1.Location = New Point(466, 578)
+        lblAbout1.Name = "lblAbout1"
+        lblAbout1.Size = New Size(515, 58)
+        lblAbout1.TabIndex = 2
+        lblAbout1.Text = "In this application you can purchase all your musical equiment needed at your leisure."
+        ' 
+        ' lblAbout
+        ' 
+        lblAbout.Anchor = AnchorStyles.None
+        lblAbout.FlatStyle = FlatStyle.Flat
+        lblAbout.Font = New Font("Cascadia Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblAbout.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        lblAbout.Location = New Point(458, 143)
+        lblAbout.Name = "lblAbout"
+        lblAbout.Size = New Size(589, 339)
+        lblAbout.TabIndex = 1
+        lblAbout.Text = resources.GetString("lblAbout.Text")
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label3.Location = New Point(479, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(502, 127)
+        Label3.TabIndex = 0
+        Label3.Text = "ABOUT US"
+        Label3.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblGuitar
         ' 
