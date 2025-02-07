@@ -85,59 +85,59 @@ Partial Class Form1
         imgBoxStrat = New PictureBox()
         pnlBass = New Panel()
         Label2 = New Label()
-        Button1 = New Button()
+        btnBass = New Button()
         Label4 = New Label()
         fndrBassImg = New PictureBox()
         pnlGibson = New Panel()
         Label5 = New Label()
-        Button2 = New Button()
+        btnGibson = New Button()
         Label6 = New Label()
         PictureBox2 = New PictureBox()
         pnlMartin = New Panel()
         Label12 = New Label()
-        Button5 = New Button()
+        btnMartin = New Button()
         Label13 = New Label()
         PictureBox5 = New PictureBox()
         pnlPRS = New Panel()
         Label10 = New Label()
-        Button4 = New Button()
+        btnPRS = New Button()
         Label11 = New Label()
         PictureBox4 = New PictureBox()
         pnlTaylor = New Panel()
         Label7 = New Label()
-        Button3 = New Button()
+        btnTaylor = New Button()
         Label9 = New Label()
         PictureBox3 = New PictureBox()
         pnlGuitar = New Panel()
         pnlKeyboard = New Panel()
         pnlASM = New Panel()
         Label27 = New Label()
-        Button12 = New Button()
+        btnASM = New Button()
         Label28 = New Label()
         PictureBox11 = New PictureBox()
         pnlProphet = New Panel()
         Label29 = New Label()
-        Button13 = New Button()
+        btnProph = New Button()
         Label30 = New Label()
         PictureBox12 = New PictureBox()
         pnlWave = New Panel()
         Label31 = New Label()
-        Button14 = New Button()
+        btnWave = New Button()
         Label32 = New Label()
         PictureBox13 = New PictureBox()
         pnlKorg = New Panel()
         Label33 = New Label()
-        Button15 = New Button()
+        btnKorg = New Button()
         Label34 = New Label()
         PictureBox14 = New PictureBox()
         pnlKeyLab = New Panel()
         Label35 = New Label()
-        Button16 = New Button()
+        btnArturia = New Button()
         Label36 = New Label()
         PictureBox15 = New PictureBox()
         pnlElektron = New Panel()
         Label37 = New Label()
-        Button17 = New Button()
+        btnElektron = New Button()
         Label38 = New Label()
         PictureBox16 = New PictureBox()
         lblKeyboards = New Label()
@@ -150,32 +150,32 @@ Partial Class Form1
         pnlDrums = New Panel()
         Panel6 = New Panel()
         Label39 = New Label()
-        Button18 = New Button()
+        btnAspire = New Button()
         Label40 = New Label()
         PictureBox17 = New PictureBox()
         Panel7 = New Panel()
         Label41 = New Label()
-        Button19 = New Button()
+        btnPerc = New Button()
         Label42 = New Label()
         PictureBox18 = New PictureBox()
         Panel8 = New Panel()
         Label43 = New Label()
-        Button20 = New Button()
+        btnPearl = New Button()
         Label44 = New Label()
         PictureBox19 = New PictureBox()
         Panel9 = New Panel()
         Label45 = New Label()
-        Button21 = New Button()
+        btnStage = New Button()
         Label46 = New Label()
         PictureBox20 = New PictureBox()
         Panel10 = New Panel()
         Label47 = New Label()
-        Button22 = New Button()
+        btnRoland = New Button()
         Label48 = New Label()
         PictureBox21 = New PictureBox()
         Panel18 = New Panel()
         Label49 = New Label()
-        Button23 = New Button()
+        btnAlesis = New Button()
         Label50 = New Label()
         PictureBox22 = New PictureBox()
         lblDrum = New Label()
@@ -975,7 +975,7 @@ Partial Class Form1
         pnlBass.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlBass.BorderStyle = BorderStyle.FixedSingle
         pnlBass.Controls.Add(Label2)
-        pnlBass.Controls.Add(Button1)
+        pnlBass.Controls.Add(btnBass)
         pnlBass.Controls.Add(Label4)
         pnlBass.Controls.Add(fndrBassImg)
         pnlBass.Location = New Point(568, 126)
@@ -995,18 +995,18 @@ Partial Class Form1
         Label2.Text = "$1400"
         Label2.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button1
+        ' btnBass
         ' 
-        Button1.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button1.Location = New Point(86, 166)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(130, 35)
-        Button1.TabIndex = 4
-        Button1.Text = "ADD TO CART"
-        Button1.UseVisualStyleBackColor = False
+        btnBass.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnBass.FlatAppearance.BorderSize = 0
+        btnBass.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnBass.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnBass.Location = New Point(86, 166)
+        btnBass.Name = "btnBass"
+        btnBass.Size = New Size(130, 35)
+        btnBass.TabIndex = 4
+        btnBass.Text = "ADD TO CART"
+        btnBass.UseVisualStyleBackColor = False
         ' 
         ' Label4
         ' 
@@ -1035,7 +1035,7 @@ Partial Class Form1
         pnlGibson.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlGibson.BorderStyle = BorderStyle.FixedSingle
         pnlGibson.Controls.Add(Label5)
-        pnlGibson.Controls.Add(Button2)
+        pnlGibson.Controls.Add(btnGibson)
         pnlGibson.Controls.Add(Label6)
         pnlGibson.Controls.Add(PictureBox2)
         pnlGibson.Location = New Point(1069, 125)
@@ -1055,18 +1055,18 @@ Partial Class Form1
         Label5.Text = "$2,799"
         Label5.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button2
+        ' btnGibson
         ' 
-        Button2.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button2.Location = New Point(86, 166)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(130, 35)
-        Button2.TabIndex = 4
-        Button2.Text = "ADD TO CART"
-        Button2.UseVisualStyleBackColor = False
+        btnGibson.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnGibson.FlatAppearance.BorderSize = 0
+        btnGibson.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnGibson.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnGibson.Location = New Point(86, 166)
+        btnGibson.Name = "btnGibson"
+        btnGibson.Size = New Size(130, 35)
+        btnGibson.TabIndex = 4
+        btnGibson.Text = "ADD TO CART"
+        btnGibson.UseVisualStyleBackColor = False
         ' 
         ' Label6
         ' 
@@ -1095,7 +1095,7 @@ Partial Class Form1
         pnlMartin.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlMartin.BorderStyle = BorderStyle.FixedSingle
         pnlMartin.Controls.Add(Label12)
-        pnlMartin.Controls.Add(Button5)
+        pnlMartin.Controls.Add(btnMartin)
         pnlMartin.Controls.Add(Label13)
         pnlMartin.Controls.Add(PictureBox5)
         pnlMartin.Location = New Point(56, 470)
@@ -1115,18 +1115,18 @@ Partial Class Form1
         Label12.Text = "$3,199"
         Label12.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button5
+        ' btnMartin
         ' 
-        Button5.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button5.FlatAppearance.BorderSize = 0
-        Button5.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button5.Location = New Point(86, 166)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(130, 35)
-        Button5.TabIndex = 4
-        Button5.Text = "ADD TO CART"
-        Button5.UseVisualStyleBackColor = False
+        btnMartin.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnMartin.FlatAppearance.BorderSize = 0
+        btnMartin.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnMartin.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnMartin.Location = New Point(86, 166)
+        btnMartin.Name = "btnMartin"
+        btnMartin.Size = New Size(130, 35)
+        btnMartin.TabIndex = 4
+        btnMartin.Text = "ADD TO CART"
+        btnMartin.UseVisualStyleBackColor = False
         ' 
         ' Label13
         ' 
@@ -1155,7 +1155,7 @@ Partial Class Form1
         pnlPRS.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlPRS.BorderStyle = BorderStyle.FixedSingle
         pnlPRS.Controls.Add(Label10)
-        pnlPRS.Controls.Add(Button4)
+        pnlPRS.Controls.Add(btnPRS)
         pnlPRS.Controls.Add(Label11)
         pnlPRS.Controls.Add(PictureBox4)
         pnlPRS.Location = New Point(568, 471)
@@ -1175,18 +1175,18 @@ Partial Class Form1
         Label10.Text = "$849"
         Label10.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button4
+        ' btnPRS
         ' 
-        Button4.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button4.Location = New Point(86, 166)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(130, 35)
-        Button4.TabIndex = 4
-        Button4.Text = "ADD TO CART"
-        Button4.UseVisualStyleBackColor = False
+        btnPRS.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnPRS.FlatAppearance.BorderSize = 0
+        btnPRS.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnPRS.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnPRS.Location = New Point(86, 166)
+        btnPRS.Name = "btnPRS"
+        btnPRS.Size = New Size(130, 35)
+        btnPRS.TabIndex = 4
+        btnPRS.Text = "ADD TO CART"
+        btnPRS.UseVisualStyleBackColor = False
         ' 
         ' Label11
         ' 
@@ -1215,7 +1215,7 @@ Partial Class Form1
         pnlTaylor.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlTaylor.BorderStyle = BorderStyle.FixedSingle
         pnlTaylor.Controls.Add(Label7)
-        pnlTaylor.Controls.Add(Button3)
+        pnlTaylor.Controls.Add(btnTaylor)
         pnlTaylor.Controls.Add(Label9)
         pnlTaylor.Controls.Add(PictureBox3)
         pnlTaylor.Location = New Point(1069, 470)
@@ -1235,18 +1235,18 @@ Partial Class Form1
         Label7.Text = "$599"
         Label7.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button3
+        ' btnTaylor
         ' 
-        Button3.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button3.FlatAppearance.BorderSize = 0
-        Button3.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button3.Location = New Point(86, 166)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(130, 35)
-        Button3.TabIndex = 4
-        Button3.Text = "ADD TO CART"
-        Button3.UseVisualStyleBackColor = False
+        btnTaylor.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnTaylor.FlatAppearance.BorderSize = 0
+        btnTaylor.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnTaylor.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnTaylor.Location = New Point(86, 166)
+        btnTaylor.Name = "btnTaylor"
+        btnTaylor.Size = New Size(130, 35)
+        btnTaylor.TabIndex = 4
+        btnTaylor.Text = "ADD TO CART"
+        btnTaylor.UseVisualStyleBackColor = False
         ' 
         ' Label9
         ' 
@@ -1305,7 +1305,7 @@ Partial Class Form1
         pnlASM.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlASM.BorderStyle = BorderStyle.FixedSingle
         pnlASM.Controls.Add(Label27)
-        pnlASM.Controls.Add(Button12)
+        pnlASM.Controls.Add(btnASM)
         pnlASM.Controls.Add(Label28)
         pnlASM.Controls.Add(PictureBox11)
         pnlASM.Location = New Point(1069, 470)
@@ -1325,18 +1325,18 @@ Partial Class Form1
         Label27.Text = "$649"
         Label27.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button12
+        ' btnASM
         ' 
-        Button12.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button12.FlatAppearance.BorderSize = 0
-        Button12.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button12.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button12.Location = New Point(86, 166)
-        Button12.Name = "Button12"
-        Button12.Size = New Size(130, 35)
-        Button12.TabIndex = 4
-        Button12.Text = "ADD TO CART"
-        Button12.UseVisualStyleBackColor = False
+        btnASM.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnASM.FlatAppearance.BorderSize = 0
+        btnASM.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnASM.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnASM.Location = New Point(86, 166)
+        btnASM.Name = "btnASM"
+        btnASM.Size = New Size(130, 35)
+        btnASM.TabIndex = 4
+        btnASM.Text = "ADD TO CART"
+        btnASM.UseVisualStyleBackColor = False
         ' 
         ' Label28
         ' 
@@ -1365,7 +1365,7 @@ Partial Class Form1
         pnlProphet.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlProphet.BorderStyle = BorderStyle.FixedSingle
         pnlProphet.Controls.Add(Label29)
-        pnlProphet.Controls.Add(Button13)
+        pnlProphet.Controls.Add(btnProph)
         pnlProphet.Controls.Add(Label30)
         pnlProphet.Controls.Add(PictureBox12)
         pnlProphet.Location = New Point(568, 471)
@@ -1385,18 +1385,18 @@ Partial Class Form1
         Label29.Text = "$4,999.99"
         Label29.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button13
+        ' btnProph
         ' 
-        Button13.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button13.FlatAppearance.BorderSize = 0
-        Button13.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button13.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button13.Location = New Point(86, 166)
-        Button13.Name = "Button13"
-        Button13.Size = New Size(130, 35)
-        Button13.TabIndex = 4
-        Button13.Text = "ADD TO CART"
-        Button13.UseVisualStyleBackColor = False
+        btnProph.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnProph.FlatAppearance.BorderSize = 0
+        btnProph.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnProph.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnProph.Location = New Point(86, 166)
+        btnProph.Name = "btnProph"
+        btnProph.Size = New Size(130, 35)
+        btnProph.TabIndex = 4
+        btnProph.Text = "ADD TO CART"
+        btnProph.UseVisualStyleBackColor = False
         ' 
         ' Label30
         ' 
@@ -1425,7 +1425,7 @@ Partial Class Form1
         pnlWave.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlWave.BorderStyle = BorderStyle.FixedSingle
         pnlWave.Controls.Add(Label31)
-        pnlWave.Controls.Add(Button14)
+        pnlWave.Controls.Add(btnWave)
         pnlWave.Controls.Add(Label32)
         pnlWave.Controls.Add(PictureBox13)
         pnlWave.Location = New Point(56, 470)
@@ -1445,18 +1445,18 @@ Partial Class Form1
         Label31.Text = "$599"
         Label31.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button14
+        ' btnWave
         ' 
-        Button14.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button14.FlatAppearance.BorderSize = 0
-        Button14.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button14.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button14.Location = New Point(86, 166)
-        Button14.Name = "Button14"
-        Button14.Size = New Size(130, 35)
-        Button14.TabIndex = 4
-        Button14.Text = "ADD TO CART"
-        Button14.UseVisualStyleBackColor = False
+        btnWave.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnWave.FlatAppearance.BorderSize = 0
+        btnWave.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnWave.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnWave.Location = New Point(86, 166)
+        btnWave.Name = "btnWave"
+        btnWave.Size = New Size(130, 35)
+        btnWave.TabIndex = 4
+        btnWave.Text = "ADD TO CART"
+        btnWave.UseVisualStyleBackColor = False
         ' 
         ' Label32
         ' 
@@ -1484,7 +1484,7 @@ Partial Class Form1
         pnlKorg.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlKorg.BorderStyle = BorderStyle.FixedSingle
         pnlKorg.Controls.Add(Label33)
-        pnlKorg.Controls.Add(Button15)
+        pnlKorg.Controls.Add(btnKorg)
         pnlKorg.Controls.Add(Label34)
         pnlKorg.Controls.Add(PictureBox14)
         pnlKorg.Location = New Point(1069, 125)
@@ -1504,18 +1504,18 @@ Partial Class Form1
         Label33.Text = "$2,999.99"
         Label33.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button15
+        ' btnKorg
         ' 
-        Button15.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button15.FlatAppearance.BorderSize = 0
-        Button15.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button15.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button15.Location = New Point(86, 167)
-        Button15.Name = "Button15"
-        Button15.Size = New Size(130, 35)
-        Button15.TabIndex = 4
-        Button15.Text = "ADD TO CART"
-        Button15.UseVisualStyleBackColor = False
+        btnKorg.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnKorg.FlatAppearance.BorderSize = 0
+        btnKorg.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnKorg.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnKorg.Location = New Point(86, 167)
+        btnKorg.Name = "btnKorg"
+        btnKorg.Size = New Size(130, 35)
+        btnKorg.TabIndex = 4
+        btnKorg.Text = "ADD TO CART"
+        btnKorg.UseVisualStyleBackColor = False
         ' 
         ' Label34
         ' 
@@ -1544,7 +1544,7 @@ Partial Class Form1
         pnlKeyLab.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlKeyLab.BorderStyle = BorderStyle.FixedSingle
         pnlKeyLab.Controls.Add(Label35)
-        pnlKeyLab.Controls.Add(Button16)
+        pnlKeyLab.Controls.Add(btnArturia)
         pnlKeyLab.Controls.Add(Label36)
         pnlKeyLab.Controls.Add(PictureBox15)
         pnlKeyLab.Location = New Point(568, 126)
@@ -1564,18 +1564,18 @@ Partial Class Form1
         Label35.Text = "$599"
         Label35.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button16
+        ' btnArturia
         ' 
-        Button16.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button16.FlatAppearance.BorderSize = 0
-        Button16.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button16.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button16.Location = New Point(86, 166)
-        Button16.Name = "Button16"
-        Button16.Size = New Size(130, 35)
-        Button16.TabIndex = 4
-        Button16.Text = "ADD TO CART"
-        Button16.UseVisualStyleBackColor = False
+        btnArturia.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnArturia.FlatAppearance.BorderSize = 0
+        btnArturia.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnArturia.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnArturia.Location = New Point(86, 166)
+        btnArturia.Name = "btnArturia"
+        btnArturia.Size = New Size(130, 35)
+        btnArturia.TabIndex = 4
+        btnArturia.Text = "ADD TO CART"
+        btnArturia.UseVisualStyleBackColor = False
         ' 
         ' Label36
         ' 
@@ -1604,7 +1604,7 @@ Partial Class Form1
         pnlElektron.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         pnlElektron.BorderStyle = BorderStyle.FixedSingle
         pnlElektron.Controls.Add(Label37)
-        pnlElektron.Controls.Add(Button17)
+        pnlElektron.Controls.Add(btnElektron)
         pnlElektron.Controls.Add(Label38)
         pnlElektron.Controls.Add(PictureBox16)
         pnlElektron.Location = New Point(56, 125)
@@ -1624,18 +1624,18 @@ Partial Class Form1
         Label37.Text = "$999"
         Label37.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button17
+        ' btnElektron
         ' 
-        Button17.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button17.FlatAppearance.BorderSize = 0
-        Button17.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button17.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button17.Location = New Point(86, 166)
-        Button17.Name = "Button17"
-        Button17.Size = New Size(130, 35)
-        Button17.TabIndex = 4
-        Button17.Text = "ADD TO CART"
-        Button17.UseVisualStyleBackColor = False
+        btnElektron.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnElektron.FlatAppearance.BorderSize = 0
+        btnElektron.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnElektron.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnElektron.Location = New Point(86, 166)
+        btnElektron.Name = "btnElektron"
+        btnElektron.Size = New Size(130, 35)
+        btnElektron.TabIndex = 4
+        btnElektron.Text = "ADD TO CART"
+        btnElektron.UseVisualStyleBackColor = False
         ' 
         ' Label38
         ' 
@@ -1691,7 +1691,7 @@ Partial Class Form1
         btnCheckout.FlatStyle = FlatStyle.Flat
         btnCheckout.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCheckout.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        btnCheckout.Location = New Point(693, 582)
+        btnCheckout.Location = New Point(704, 618)
         btnCheckout.Name = "btnCheckout"
         btnCheckout.Size = New Size(96, 35)
         btnCheckout.TabIndex = 6
@@ -1703,7 +1703,7 @@ Partial Class Form1
         lblTotalPrice.AutoSize = True
         lblTotalPrice.Font = New Font("Cascadia Mono", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblTotalPrice.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        lblTotalPrice.Location = New Point(667, 634)
+        lblTotalPrice.Location = New Point(667, 676)
         lblTotalPrice.Name = "lblTotalPrice"
         lblTotalPrice.Size = New Size(0, 32)
         lblTotalPrice.TabIndex = 5
@@ -1723,11 +1723,15 @@ Partial Class Form1
         ' 
         ' lstCart
         ' 
+        lstCart.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        lstCart.BorderStyle = BorderStyle.None
+        lstCart.Font = New Font("Cascadia Code SemiBold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lstCart.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         lstCart.FormattingEnabled = True
-        lstCart.ItemHeight = 15
-        lstCart.Location = New Point(591, 228)
+        lstCart.ItemHeight = 25
+        lstCart.Location = New Point(454, 231)
         lstCart.Name = "lstCart"
-        lstCart.Size = New Size(308, 349)
+        lstCart.Size = New Size(589, 350)
         lstCart.TabIndex = 2
         ' 
         ' lblCartTitle
@@ -1762,7 +1766,7 @@ Partial Class Form1
         Panel6.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         Panel6.BorderStyle = BorderStyle.FixedSingle
         Panel6.Controls.Add(Label39)
-        Panel6.Controls.Add(Button18)
+        Panel6.Controls.Add(btnAspire)
         Panel6.Controls.Add(Label40)
         Panel6.Controls.Add(PictureBox17)
         Panel6.Location = New Point(1069, 470)
@@ -1782,18 +1786,18 @@ Partial Class Form1
         Label39.Text = "$399.99"
         Label39.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button18
+        ' btnAspire
         ' 
-        Button18.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button18.FlatAppearance.BorderSize = 0
-        Button18.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button18.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button18.Location = New Point(86, 166)
-        Button18.Name = "Button18"
-        Button18.Size = New Size(130, 35)
-        Button18.TabIndex = 4
-        Button18.Text = "ADD TO CART"
-        Button18.UseVisualStyleBackColor = False
+        btnAspire.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnAspire.FlatAppearance.BorderSize = 0
+        btnAspire.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnAspire.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnAspire.Location = New Point(86, 166)
+        btnAspire.Name = "btnAspire"
+        btnAspire.Size = New Size(130, 35)
+        btnAspire.TabIndex = 4
+        btnAspire.Text = "ADD TO CART"
+        btnAspire.UseVisualStyleBackColor = False
         ' 
         ' Label40
         ' 
@@ -1822,7 +1826,7 @@ Partial Class Form1
         Panel7.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         Panel7.BorderStyle = BorderStyle.FixedSingle
         Panel7.Controls.Add(Label41)
-        Panel7.Controls.Add(Button19)
+        Panel7.Controls.Add(btnPerc)
         Panel7.Controls.Add(Label42)
         Panel7.Controls.Add(PictureBox18)
         Panel7.Location = New Point(568, 471)
@@ -1842,18 +1846,18 @@ Partial Class Form1
         Label41.Text = "$299.99"
         Label41.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button19
+        ' btnPerc
         ' 
-        Button19.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button19.FlatAppearance.BorderSize = 0
-        Button19.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button19.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button19.Location = New Point(86, 166)
-        Button19.Name = "Button19"
-        Button19.Size = New Size(130, 35)
-        Button19.TabIndex = 4
-        Button19.Text = "ADD TO CART"
-        Button19.UseVisualStyleBackColor = False
+        btnPerc.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnPerc.FlatAppearance.BorderSize = 0
+        btnPerc.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnPerc.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnPerc.Location = New Point(86, 166)
+        btnPerc.Name = "btnPerc"
+        btnPerc.Size = New Size(130, 35)
+        btnPerc.TabIndex = 4
+        btnPerc.Text = "ADD TO CART"
+        btnPerc.UseVisualStyleBackColor = False
         ' 
         ' Label42
         ' 
@@ -1882,7 +1886,7 @@ Partial Class Form1
         Panel8.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         Panel8.BorderStyle = BorderStyle.FixedSingle
         Panel8.Controls.Add(Label43)
-        Panel8.Controls.Add(Button20)
+        Panel8.Controls.Add(btnPearl)
         Panel8.Controls.Add(Label44)
         Panel8.Controls.Add(PictureBox19)
         Panel8.Location = New Point(56, 470)
@@ -1902,18 +1906,18 @@ Partial Class Form1
         Label43.Text = "$799.99"
         Label43.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button20
+        ' btnPearl
         ' 
-        Button20.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button20.FlatAppearance.BorderSize = 0
-        Button20.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button20.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button20.Location = New Point(86, 166)
-        Button20.Name = "Button20"
-        Button20.Size = New Size(130, 35)
-        Button20.TabIndex = 4
-        Button20.Text = "ADD TO CART"
-        Button20.UseVisualStyleBackColor = False
+        btnPearl.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnPearl.FlatAppearance.BorderSize = 0
+        btnPearl.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnPearl.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnPearl.Location = New Point(86, 166)
+        btnPearl.Name = "btnPearl"
+        btnPearl.Size = New Size(130, 35)
+        btnPearl.TabIndex = 4
+        btnPearl.Text = "ADD TO CART"
+        btnPearl.UseVisualStyleBackColor = False
         ' 
         ' Label44
         ' 
@@ -1941,7 +1945,7 @@ Partial Class Form1
         Panel9.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         Panel9.BorderStyle = BorderStyle.FixedSingle
         Panel9.Controls.Add(Label45)
-        Panel9.Controls.Add(Button21)
+        Panel9.Controls.Add(btnStage)
         Panel9.Controls.Add(Label46)
         Panel9.Controls.Add(PictureBox20)
         Panel9.Location = New Point(1069, 125)
@@ -1961,18 +1965,18 @@ Partial Class Form1
         Label45.Text = "$1,099.99"
         Label45.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button21
+        ' btnStage
         ' 
-        Button21.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button21.FlatAppearance.BorderSize = 0
-        Button21.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button21.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button21.Location = New Point(86, 167)
-        Button21.Name = "Button21"
-        Button21.Size = New Size(130, 35)
-        Button21.TabIndex = 4
-        Button21.Text = "ADD TO CART"
-        Button21.UseVisualStyleBackColor = False
+        btnStage.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnStage.FlatAppearance.BorderSize = 0
+        btnStage.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnStage.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnStage.Location = New Point(86, 167)
+        btnStage.Name = "btnStage"
+        btnStage.Size = New Size(130, 35)
+        btnStage.TabIndex = 4
+        btnStage.Text = "ADD TO CART"
+        btnStage.UseVisualStyleBackColor = False
         ' 
         ' Label46
         ' 
@@ -2000,7 +2004,7 @@ Partial Class Form1
         Panel10.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         Panel10.BorderStyle = BorderStyle.FixedSingle
         Panel10.Controls.Add(Label47)
-        Panel10.Controls.Add(Button22)
+        Panel10.Controls.Add(btnRoland)
         Panel10.Controls.Add(Label48)
         Panel10.Controls.Add(PictureBox21)
         Panel10.Location = New Point(568, 126)
@@ -2020,18 +2024,18 @@ Partial Class Form1
         Label47.Text = "$3,499.99"
         Label47.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button22
+        ' btnRoland
         ' 
-        Button22.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button22.FlatAppearance.BorderSize = 0
-        Button22.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button22.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button22.Location = New Point(86, 166)
-        Button22.Name = "Button22"
-        Button22.Size = New Size(130, 35)
-        Button22.TabIndex = 4
-        Button22.Text = "ADD TO CART"
-        Button22.UseVisualStyleBackColor = False
+        btnRoland.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnRoland.FlatAppearance.BorderSize = 0
+        btnRoland.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnRoland.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnRoland.Location = New Point(86, 166)
+        btnRoland.Name = "btnRoland"
+        btnRoland.Size = New Size(130, 35)
+        btnRoland.TabIndex = 4
+        btnRoland.Text = "ADD TO CART"
+        btnRoland.UseVisualStyleBackColor = False
         ' 
         ' Label48
         ' 
@@ -2060,7 +2064,7 @@ Partial Class Form1
         Panel18.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
         Panel18.BorderStyle = BorderStyle.FixedSingle
         Panel18.Controls.Add(Label49)
-        Panel18.Controls.Add(Button23)
+        Panel18.Controls.Add(btnAlesis)
         Panel18.Controls.Add(Label50)
         Panel18.Controls.Add(PictureBox22)
         Panel18.Location = New Point(56, 125)
@@ -2080,18 +2084,18 @@ Partial Class Form1
         Label49.Text = "$159"
         Label49.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button23
+        ' btnAlesis
         ' 
-        Button23.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        Button23.FlatAppearance.BorderSize = 0
-        Button23.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button23.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Button23.Location = New Point(86, 166)
-        Button23.Name = "Button23"
-        Button23.Size = New Size(130, 35)
-        Button23.TabIndex = 4
-        Button23.Text = "ADD TO CART"
-        Button23.UseVisualStyleBackColor = False
+        btnAlesis.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnAlesis.FlatAppearance.BorderSize = 0
+        btnAlesis.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnAlesis.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnAlesis.Location = New Point(86, 166)
+        btnAlesis.Name = "btnAlesis"
+        btnAlesis.Size = New Size(130, 35)
+        btnAlesis.TabIndex = 4
+        btnAlesis.Text = "ADD TO CART"
+        btnAlesis.UseVisualStyleBackColor = False
         ' 
         ' Label50
         ' 
@@ -2133,10 +2137,10 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(62), CByte(66), CByte(58))
         ClientSize = New Size(1443, 806)
-        Controls.Add(pnlGuitar)
-        Controls.Add(pnlCart)
         Controls.Add(pnlDrums)
         Controls.Add(pnlKeyboard)
+        Controls.Add(pnlCart)
+        Controls.Add(pnlGuitar)
         Controls.Add(pnlAbout)
         Controls.Add(pnlHome)
         Controls.Add(Panel2)
@@ -2303,59 +2307,59 @@ Partial Class Form1
     Friend WithEvents imgBoxStrat As PictureBox
     Friend WithEvents pnlBass As Panel
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnBass As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents fndrBassImg As PictureBox
     Friend WithEvents pnlGibson As Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnGibson As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents pnlMartin As Panel
     Friend WithEvents Label12 As Label
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnMartin As Button
     Friend WithEvents Label13 As Label
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents pnlPRS As Panel
     Friend WithEvents Label10 As Label
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnPRS As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents pnlTaylor As Panel
     Friend WithEvents Label7 As Label
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnTaylor As Button
     Friend WithEvents Label9 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents pnlGuitar As Panel
     Friend WithEvents pnlKeyboard As Panel
     Friend WithEvents pnlASM As Panel
     Friend WithEvents Label27 As Label
-    Friend WithEvents Button12 As Button
+    Friend WithEvents btnASM As Button
     Friend WithEvents Label28 As Label
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents pnlProphet As Panel
     Friend WithEvents Label29 As Label
-    Friend WithEvents Button13 As Button
+    Friend WithEvents btnProph As Button
     Friend WithEvents Label30 As Label
     Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents pnlWave As Panel
     Friend WithEvents Label31 As Label
-    Friend WithEvents Button14 As Button
+    Friend WithEvents btnWave As Button
     Friend WithEvents Label32 As Label
     Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents pnlKorg As Panel
     Friend WithEvents Label33 As Label
-    Friend WithEvents Button15 As Button
+    Friend WithEvents btnKorg As Button
     Friend WithEvents Label34 As Label
     Friend WithEvents PictureBox14 As PictureBox
     Friend WithEvents pnlKeyLab As Panel
     Friend WithEvents Label35 As Label
-    Friend WithEvents Button16 As Button
+    Friend WithEvents btnArturia As Button
     Friend WithEvents Label36 As Label
     Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents pnlElektron As Panel
     Friend WithEvents Label37 As Label
-    Friend WithEvents Button17 As Button
+    Friend WithEvents btnElektron As Button
     Friend WithEvents Label38 As Label
     Friend WithEvents PictureBox16 As PictureBox
     Friend WithEvents lblKeyboards As Label
@@ -2364,32 +2368,32 @@ Partial Class Form1
     Friend WithEvents pnlDrums As Panel
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label39 As Label
-    Friend WithEvents Button18 As Button
+    Friend WithEvents btnAspire As Button
     Friend WithEvents Label40 As Label
     Friend WithEvents PictureBox17 As PictureBox
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Label41 As Label
-    Friend WithEvents Button19 As Button
+    Friend WithEvents btnPerc As Button
     Friend WithEvents Label42 As Label
     Friend WithEvents PictureBox18 As PictureBox
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Label43 As Label
-    Friend WithEvents Button20 As Button
+    Friend WithEvents btnPearl As Button
     Friend WithEvents Label44 As Label
     Friend WithEvents PictureBox19 As PictureBox
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Label45 As Label
-    Friend WithEvents Button21 As Button
+    Friend WithEvents btnStage As Button
     Friend WithEvents Label46 As Label
     Friend WithEvents PictureBox20 As PictureBox
     Friend WithEvents Panel10 As Panel
     Friend WithEvents Label47 As Label
-    Friend WithEvents Button22 As Button
+    Friend WithEvents btnRoland As Button
     Friend WithEvents Label48 As Label
     Friend WithEvents PictureBox21 As PictureBox
     Friend WithEvents Panel18 As Panel
     Friend WithEvents Label49 As Label
-    Friend WithEvents Button23 As Button
+    Friend WithEvents btnAlesis As Button
     Friend WithEvents Label50 As Label
     Friend WithEvents PictureBox22 As PictureBox
     Friend WithEvents lblDrum As Label

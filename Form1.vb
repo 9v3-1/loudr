@@ -89,41 +89,114 @@ Public Class Form1
         End Sub
     End Class
 
+    ' Adds an item to the cart and updates the cart UI
     Private Sub AddToCart(itemName As String, price As Decimal)
-        cartItems.Add(New CartItem(itemName, price))
-        UpdateCart()
+        cartItems.Add(New CartItem(itemName, price)) ' Add the item to the cart
+        UpdateCart() ' Refresh the cart UI
     End Sub
 
+    ' Updates the cart UI with the current items and total price
     Private Sub UpdateCart()
-        Dim totalPrice As Decimal = cartItems.Sum(Function(item) item.Price)
+        Dim totalPrice As Decimal = cartItems.Sum(Function(item) item.Price) ' Calculate total price
         ' Update the cart UI with the items and total price
-        ' For example, you can update a ListBox and a Label
-        lstCart.Items.Clear()
+        lstCart.Items.Clear() ' Clear the current items in the list
         For Each item In cartItems
-            lstCart.Items.Add($"{item.ItemName} - ${item.Price}")
+            lstCart.Items.Add($"{item.ItemName} - ${item.Price}") ' Add each item to the list
         Next
 
-        lblTotalPrice.Text = $"Total: ${totalPrice}"
+        lblTotalPrice.Text = $"Total: ${totalPrice}" ' Update the total price label
     End Sub
 
+    ' -----------------Event handlers for adding GUITAR items to the cart-----------------------
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        AddToCart("Fender Standard Stratocaster", 1200)
+        AddToCart("Fender Standard Stratocaster", 1200) ' Add Fender Standard Stratocaster to the cart
+    End Sub
+    Private Sub btnBass_Click(sender As Object, e As EventArgs) Handles btnBass.Click
+        AddToCart("Fender Player II Bass", 1400) ' Add Fender Player II Bass to the cart
     End Sub
 
-    ' Add similar event handlers for other items... YES DO IT LATER NASIR
+    Private Sub btnGibson_Click(sender As Object, e As EventArgs) Handles btnGibson.Click
+        AddToCart("Gibson Les Paul", 2799) ' Add Gibson Les Paul to the cart
+    End Sub
 
+    Private Sub btnMartin_Click(sender As Object, e As EventArgs) Handles btnMartin.Click
+        AddToCart("Martin D-28", 3199) ' Add Martin D-28 to the cart
+    End Sub
+
+    Private Sub btnPRS_Click(sender As Object, e As EventArgs) Handles btnPRS.Click
+        AddToCart("PRS Custom 24", 849) ' Add PRS Custom 24 to the cart
+    End Sub
+
+    Private Sub btnTaylor_Click(sender As Object, e As EventArgs) Handles btnTaylor.Click
+        AddToCart("Taylor GS Mini", 599) ' Add Taylor GS Mini to the cart
+    End Sub
+
+
+    '-------------------Event handlers for adding KEYBOARD items to the cart-----------------------
+
+    Private Sub btnElektron_Click(sender As Object, e As EventArgs) Handles btnElektron.Click
+        AddToCart("Elektron Digitone II", 999) ' Add Elektron Digitone II to the cart
+    End Sub
+
+    Private Sub btnArturia_Click(sender As Object, e As EventArgs) Handles btnArturia.Click
+        AddToCart("Arturia KeyLab 61 mk3", 599) ' Add Arturia KeyLab 61 mk3 to the cart
+    End Sub
+
+    Private Sub btnKorg_Click(sender As Object, e As EventArgs) Handles btnKorg.Click
+        AddToCart("btnKorg Grandstage X", 2999.99) ' Add Korg Grandstage X to the cart
+    End Sub
+
+    Private Sub btnWave_Click(sender As Object, e As EventArgs) Handles btnWave.Click
+        AddToCart("Wavetable Synthesizer", 599) ' Add Wavetable Synthesizer to the cart
+    End Sub
+
+    Private Sub btnProph_Click(sender As Object, e As EventArgs) Handles btnProph.Click
+        AddToCart("Sequential Prophet-10SE", 4999.99) ' Add Sequential Prophet-10SE to the cart
+    End Sub
+
+    Private Sub btnASM_Click(sender As Object, e As EventArgs) Handles btnASM.Click
+        AddToCart("ASM Hydrasynth", 649) ' Add ASM Hydrasynth to the cart
+    End Sub
+
+
+    '-------------------Event handlers for adding DRUM items to the cart-----------------------
+    Private Sub btnAlesis_Click(sender As Object, e As EventArgs) Handles btnAlesis.Click
+        AddToCart("Alesis SR16", 159) ' Add Alesis SR16 to the cart
+    End Sub
+
+    Private Sub btnRoland_Click(sender As Object, e As EventArgs) Handles btnRoland.Click
+        AddToCart("Roland TD-27KV", 3499.99) ' Add Roland TD-27KV to the cart
+    End Sub
+
+    Private Sub btnStage_Click(sender As Object, e As EventArgs) Handles btnStage.Click
+        AddToCart("Yamaha Stage Custom Birch", 1099.99) ' Add Yamaha Stage Custom Birch to the cart
+    End Sub
+
+    Private Sub btnPearl_Click(sender As Object, e As EventArgs) Handles btnPearl.Click
+        AddToCart("Pearl Export EXX", 799.99) ' Add Pearl Export EXX to the cart
+    End Sub
+
+    Private Sub btnPerc_Click(sender As Object, e As EventArgs) Handles btnPerc.Click
+        AddToCart("Meinl Percussion Set", 299.99) ' Add Meinl Percussion Set to the cart
+    End Sub
+
+    Private Sub btnAspire_Click(sender As Object, e As EventArgs) Handles btnAspire.Click
+        AddToCart("LP Aspire Conga Set", 399.99) ' Add LP Aspire Conga Set to the cart
+    End Sub
+
+    ' Handles the checkout process
     Private Sub btnCheckout_Click(sender As Object, e As EventArgs) Handles btnCheckout.Click
         If cartItems.Count = 0 Then
-            MessageBox.Show("Your cart is empty.", "Checkout", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("Your cart is empty.", "Checkout", MessageBoxButtons.OK, MessageBoxIcon.Information) ' Show message if cart is empty
             Return
         End If
 
         Dim result As DialogResult = MessageBox.Show("Do you want to finalize the purchase?", "Checkout", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
             ' Finalize the purchase
-            MessageBox.Show("Purchase completed successfully!", "Checkout", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            cartItems.Clear()
-            UpdateCart()
+            MessageBox.Show("Purchase completed successfully!", "Checkout", MessageBoxButtons.OK, MessageBoxIcon.Information) ' Show success message
+            cartItems.Clear() ' Clear the cart
+            UpdateCart() ' Refresh the cart UI
         End If
     End Sub
 End Class
