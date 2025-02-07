@@ -3,6 +3,18 @@
 Public Class Form1
     Private cartItems As New List(Of CartItem)
 
+    ' ------------------------Event handlers for navigation buttons-----------------------
+    Private Sub btnHomeAbout_Click(sender As Object, e As EventArgs) Handles btnHomeAbout.Click
+        pnlGuitar.Visible = False
+        pnlHome.Visible = False
+        pnlKeyboard.Visible = False
+        pnlCart.Visible = False
+        pnlDrums.Visible = False
+
+        pnlAbout.Visible = True ' Shows the About panel when the About button is clicked 
+        pnlAbout.BringToFront()
+    End Sub
+
     Private Sub btnAbout_Click(sender As Object, e As EventArgs) Handles btnAbout.Click
         pnlGuitar.Visible = False
         pnlHome.Visible = False
@@ -79,7 +91,7 @@ Public Class Form1
         pnlDrums.Visible = False
     End Sub
 
-    Public Class CartItem
+    Public Class CartItem ' Declares a class to represent an item in the cart with name and price variables
         Public Property ItemName As String
         Public Property Price As Decimal
 
@@ -197,6 +209,15 @@ Public Class Form1
             MessageBox.Show("Purchase completed successfully!", "Checkout", MessageBoxButtons.OK, MessageBoxIcon.Information) ' Show success message
             cartItems.Clear() ' Clear the cart
             UpdateCart() ' Refresh the cart UI
+        End If
+    End Sub
+
+    Private Sub btnClearCart_Click(sender As Object, e As EventArgs) Handles btnClearCart.Click
+        Dim clicked As DialogResult = MessageBox.Show("Do you want to clear your cart?", "Clear Cart", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+
+        If clicked = DialogResult.Yes Then
+            cartItems.Clear()
+            UpdateCart()
         End If
     End Sub
 End Class

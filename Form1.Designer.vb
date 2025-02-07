@@ -58,7 +58,6 @@ Partial Class Form1
         Label26 = New Label()
         Panel3 = New Panel()
         btnHome = New Button()
-        btnShop = New Button()
         btnAbout = New Button()
         icoLoudr = New PictureBox()
         btnKeyboards = New Button()
@@ -70,13 +69,13 @@ Partial Class Form1
         btnStudio = New Button()
         btnDrums = New Button()
         pnlHome = New Panel()
-        btnHomeAbout = New Button()
-        btnHomeShop = New Button()
-        lblHomeDesc = New Label()
-        lblLoudrHome = New Label()
         pnlAbout = New Panel()
+        lblAbout1 = New Label()
         lblAbout = New Label()
         Label3 = New Label()
+        btnHomeAbout = New Button()
+        lblHomeDesc = New Label()
+        lblLoudrHome = New Label()
         lblGuitar = New Label()
         pnlStrat = New Panel()
         Label8 = New Label()
@@ -142,6 +141,7 @@ Partial Class Form1
         PictureBox16 = New PictureBox()
         lblKeyboards = New Label()
         pnlCart = New Panel()
+        btnClearCart = New Button()
         btnCheckout = New Button()
         lblTotalPrice = New Label()
         lblTotalName = New Label()
@@ -246,7 +246,6 @@ Partial Class Form1
         pnlNav.Controls.Add(Panel11)
         pnlNav.Controls.Add(Panel3)
         pnlNav.Controls.Add(btnHome)
-        pnlNav.Controls.Add(btnShop)
         pnlNav.Controls.Add(btnAbout)
         pnlNav.Controls.Add(icoLoudr)
         pnlNav.Location = New Point(0, 0)
@@ -663,20 +662,6 @@ Partial Class Form1
         btnHome.Text = "LOUDR"
         btnHome.UseVisualStyleBackColor = False
         ' 
-        ' btnShop
-        ' 
-        btnShop.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
-        btnShop.FlatAppearance.BorderSize = 0
-        btnShop.FlatStyle = FlatStyle.Flat
-        btnShop.Font = New Font("Yu Gothic UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnShop.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        btnShop.Location = New Point(352, 20)
-        btnShop.Name = "btnShop"
-        btnShop.Size = New Size(96, 35)
-        btnShop.TabIndex = 2
-        btnShop.Text = "SHOP"
-        btnShop.UseVisualStyleBackColor = False
-        ' 
         ' btnAbout
         ' 
         btnAbout.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
@@ -686,7 +671,7 @@ Partial Class Form1
         btnAbout.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         btnAbout.Location = New Point(261, 20)
         btnAbout.Name = "btnAbout"
-        btnAbout.Size = New Size(83, 35)
+        btnAbout.Size = New Size(137, 35)
         btnAbout.TabIndex = 1
         btnAbout.Text = "ABOUT"
         btnAbout.UseVisualStyleBackColor = False
@@ -805,13 +790,60 @@ Partial Class Form1
         ' pnlHome
         ' 
         pnlHome.Controls.Add(btnHomeAbout)
-        pnlHome.Controls.Add(btnHomeShop)
         pnlHome.Controls.Add(lblHomeDesc)
         pnlHome.Controls.Add(lblLoudrHome)
-        pnlHome.Location = New Point(0, 66)
+        pnlHome.Location = New Point(0, 63)
         pnlHome.Name = "pnlHome"
-        pnlHome.Size = New Size(1443, 740)
+        pnlHome.Size = New Size(1443, 743)
         pnlHome.TabIndex = 5
+        ' 
+        ' pnlAbout
+        ' 
+        pnlAbout.Anchor = AnchorStyles.Top
+        pnlAbout.Controls.Add(lblAbout1)
+        pnlAbout.Controls.Add(lblAbout)
+        pnlAbout.Controls.Add(Label3)
+        pnlAbout.Location = New Point(0, 0)
+        pnlAbout.Name = "pnlAbout"
+        pnlAbout.Size = New Size(1443, 806)
+        pnlAbout.TabIndex = 6
+        pnlAbout.Visible = False
+        ' 
+        ' lblAbout1
+        ' 
+        lblAbout1.Anchor = AnchorStyles.None
+        lblAbout1.FlatStyle = FlatStyle.Flat
+        lblAbout1.Font = New Font("Cascadia Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblAbout1.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        lblAbout1.Location = New Point(466, 610)
+        lblAbout1.Name = "lblAbout1"
+        lblAbout1.Size = New Size(515, 58)
+        lblAbout1.TabIndex = 2
+        lblAbout1.Text = "In this application you can purchase all your musical equiment needed at your leisure."
+        ' 
+        ' lblAbout
+        ' 
+        lblAbout.Anchor = AnchorStyles.None
+        lblAbout.FlatStyle = FlatStyle.Flat
+        lblAbout.Font = New Font("Cascadia Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblAbout.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        lblAbout.Location = New Point(458, 175)
+        lblAbout.Name = "lblAbout"
+        lblAbout.Size = New Size(589, 339)
+        lblAbout.TabIndex = 1
+        lblAbout.Text = resources.GetString("lblAbout.Text")
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label3.Location = New Point(479, 0)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(502, 127)
+        Label3.TabIndex = 0
+        Label3.Text = "ABOUT US"
+        Label3.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' btnHomeAbout
         ' 
@@ -820,26 +852,12 @@ Partial Class Form1
         btnHomeAbout.FlatStyle = FlatStyle.Flat
         btnHomeAbout.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnHomeAbout.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        btnHomeAbout.Location = New Point(390, 444)
+        btnHomeAbout.Location = New Point(568, 431)
         btnHomeAbout.Name = "btnHomeAbout"
-        btnHomeAbout.Size = New Size(230, 65)
+        btnHomeAbout.Size = New Size(386, 65)
         btnHomeAbout.TabIndex = 4
-        btnHomeAbout.Text = "ABOUT"
+        btnHomeAbout.Text = "ABOUT US"
         btnHomeAbout.UseVisualStyleBackColor = False
-        ' 
-        ' btnHomeShop
-        ' 
-        btnHomeShop.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
-        btnHomeShop.FlatAppearance.BorderSize = 0
-        btnHomeShop.FlatStyle = FlatStyle.Flat
-        btnHomeShop.Font = New Font("Yu Gothic UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnHomeShop.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        btnHomeShop.Location = New Point(855, 444)
-        btnHomeShop.Name = "btnHomeShop"
-        btnHomeShop.Size = New Size(230, 65)
-        btnHomeShop.TabIndex = 3
-        btnHomeShop.Text = "SHOP"
-        btnHomeShop.UseVisualStyleBackColor = False
         ' 
         ' lblHomeDesc
         ' 
@@ -862,41 +880,6 @@ Partial Class Form1
         lblLoudrHome.Size = New Size(695, 264)
         lblLoudrHome.TabIndex = 0
         lblLoudrHome.Text = "LOUDR"
-        ' 
-        ' pnlAbout
-        ' 
-        pnlAbout.Anchor = AnchorStyles.Top
-        pnlAbout.Controls.Add(lblAbout)
-        pnlAbout.Controls.Add(Label3)
-        pnlAbout.Location = New Point(0, 66)
-        pnlAbout.Name = "pnlAbout"
-        pnlAbout.Size = New Size(1443, 740)
-        pnlAbout.TabIndex = 6
-        pnlAbout.Visible = False
-        ' 
-        ' lblAbout
-        ' 
-        lblAbout.Anchor = AnchorStyles.None
-        lblAbout.FlatStyle = FlatStyle.Flat
-        lblAbout.Font = New Font("Cascadia Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblAbout.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        lblAbout.Location = New Point(454, 150)
-        lblAbout.Name = "lblAbout"
-        lblAbout.Size = New Size(589, 339)
-        lblAbout.TabIndex = 1
-        lblAbout.Text = resources.GetString("lblAbout.Text")
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        Label3.Location = New Point(479, 0)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(502, 127)
-        Label3.TabIndex = 0
-        Label3.Text = "ABOUT US"
-        Label3.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lblGuitar
         ' 
@@ -1673,6 +1656,7 @@ Partial Class Form1
         ' 
         ' pnlCart
         ' 
+        pnlCart.Controls.Add(btnClearCart)
         pnlCart.Controls.Add(btnCheckout)
         pnlCart.Controls.Add(lblTotalPrice)
         pnlCart.Controls.Add(lblTotalName)
@@ -1684,6 +1668,20 @@ Partial Class Form1
         pnlCart.TabIndex = 7
         pnlCart.Visible = False
         ' 
+        ' btnClearCart
+        ' 
+        btnClearCart.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        btnClearCart.FlatAppearance.BorderSize = 0
+        btnClearCart.FlatStyle = FlatStyle.Flat
+        btnClearCart.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnClearCart.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnClearCart.Location = New Point(830, 618)
+        btnClearCart.Name = "btnClearCart"
+        btnClearCart.Size = New Size(96, 35)
+        btnClearCart.TabIndex = 7
+        btnClearCart.Text = "CLEAR"
+        btnClearCart.UseVisualStyleBackColor = False
+        ' 
         ' btnCheckout
         ' 
         btnCheckout.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
@@ -1691,7 +1689,7 @@ Partial Class Form1
         btnCheckout.FlatStyle = FlatStyle.Flat
         btnCheckout.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnCheckout.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
-        btnCheckout.Location = New Point(704, 618)
+        btnCheckout.Location = New Point(573, 618)
         btnCheckout.Name = "btnCheckout"
         btnCheckout.Size = New Size(96, 35)
         btnCheckout.TabIndex = 6
@@ -1716,9 +1714,9 @@ Partial Class Form1
         lblTotalName.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         lblTotalName.Location = New Point(667, 193)
         lblTotalName.Name = "lblTotalName"
-        lblTotalName.Size = New Size(168, 32)
+        lblTotalName.Size = New Size(112, 32)
         lblTotalName.TabIndex = 3
-        lblTotalName.Text = "Total Price"
+        lblTotalName.Text = "Receipt"
         lblTotalName.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' lstCart
@@ -2137,12 +2135,12 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(62), CByte(66), CByte(58))
         ClientSize = New Size(1443, 806)
-        Controls.Add(pnlDrums)
-        Controls.Add(pnlKeyboard)
-        Controls.Add(pnlCart)
-        Controls.Add(pnlGuitar)
         Controls.Add(pnlAbout)
         Controls.Add(pnlHome)
+        Controls.Add(pnlCart)
+        Controls.Add(pnlDrums)
+        Controls.Add(pnlKeyboard)
+        Controls.Add(pnlGuitar)
         Controls.Add(Panel2)
         Controls.Add(pnlNav)
         Controls.Add(Panel5)
@@ -2248,7 +2246,6 @@ Partial Class Form1
     Friend WithEvents pnlNav As Panel
     Friend WithEvents icoLoudr As PictureBox
     Friend WithEvents btnAbout As Button
-    Friend WithEvents btnShop As Button
     Friend WithEvents btnHome As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnKeyboards As Button
@@ -2261,7 +2258,6 @@ Partial Class Form1
     Friend WithEvents btnCart As Button
     Friend WithEvents pnlHome As Panel
     Friend WithEvents lblLoudrHome As Label
-    Friend WithEvents btnHomeShop As Button
     Friend WithEvents lblHomeDesc As Label
     Friend WithEvents btnHomeAbout As Button
     Friend WithEvents Label3 As Label
@@ -2401,5 +2397,7 @@ Partial Class Form1
     Friend WithEvents lstCart As ListBox
     Friend WithEvents lblTotalPrice As Label
     Friend WithEvents btnCheckout As Button
+    Friend WithEvents btnClearCart As Button
+    Friend WithEvents lblAbout1 As Label
 
 End Class
