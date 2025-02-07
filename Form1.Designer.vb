@@ -142,7 +142,43 @@ Partial Class Form1
         PictureBox16 = New PictureBox()
         lblKeyboards = New Label()
         pnlCart = New Panel()
+        btnCheckout = New Button()
+        lblTotalPrice = New Label()
+        lblTotalName = New Label()
+        lstCart = New ListBox()
         lblCartTitle = New Label()
+        pnlDrums = New Panel()
+        Panel6 = New Panel()
+        Label39 = New Label()
+        Button18 = New Button()
+        Label40 = New Label()
+        PictureBox17 = New PictureBox()
+        Panel7 = New Panel()
+        Label41 = New Label()
+        Button19 = New Button()
+        Label42 = New Label()
+        PictureBox18 = New PictureBox()
+        Panel8 = New Panel()
+        Label43 = New Label()
+        Button20 = New Button()
+        Label44 = New Label()
+        PictureBox19 = New PictureBox()
+        Panel9 = New Panel()
+        Label45 = New Label()
+        Button21 = New Button()
+        Label46 = New Label()
+        PictureBox20 = New PictureBox()
+        Panel10 = New Panel()
+        Label47 = New Label()
+        Button22 = New Button()
+        Label48 = New Label()
+        PictureBox21 = New PictureBox()
+        Panel18 = New Panel()
+        Label49 = New Label()
+        Button23 = New Button()
+        Label50 = New Label()
+        PictureBox22 = New PictureBox()
+        lblDrum = New Label()
         pnlNav.SuspendLayout()
         Panel11.SuspendLayout()
         Panel12.SuspendLayout()
@@ -189,6 +225,19 @@ Partial Class Form1
         pnlElektron.SuspendLayout()
         CType(PictureBox16, ComponentModel.ISupportInitialize).BeginInit()
         pnlCart.SuspendLayout()
+        pnlDrums.SuspendLayout()
+        Panel6.SuspendLayout()
+        CType(PictureBox17, ComponentModel.ISupportInitialize).BeginInit()
+        Panel7.SuspendLayout()
+        CType(PictureBox18, ComponentModel.ISupportInitialize).BeginInit()
+        Panel8.SuspendLayout()
+        CType(PictureBox19, ComponentModel.ISupportInitialize).BeginInit()
+        Panel9.SuspendLayout()
+        CType(PictureBox20, ComponentModel.ISupportInitialize).BeginInit()
+        Panel10.SuspendLayout()
+        CType(PictureBox21, ComponentModel.ISupportInitialize).BeginInit()
+        Panel18.SuspendLayout()
+        CType(PictureBox22, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' pnlNav
@@ -1624,12 +1673,62 @@ Partial Class Form1
         ' 
         ' pnlCart
         ' 
+        pnlCart.Controls.Add(btnCheckout)
+        pnlCart.Controls.Add(lblTotalPrice)
+        pnlCart.Controls.Add(lblTotalName)
+        pnlCart.Controls.Add(lstCart)
         pnlCart.Controls.Add(lblCartTitle)
         pnlCart.Location = New Point(0, 63)
         pnlCart.Name = "pnlCart"
         pnlCart.Size = New Size(1443, 740)
         pnlCart.TabIndex = 7
         pnlCart.Visible = False
+        ' 
+        ' btnCheckout
+        ' 
+        btnCheckout.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        btnCheckout.FlatAppearance.BorderSize = 0
+        btnCheckout.FlatStyle = FlatStyle.Flat
+        btnCheckout.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnCheckout.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnCheckout.Location = New Point(693, 582)
+        btnCheckout.Name = "btnCheckout"
+        btnCheckout.Size = New Size(96, 35)
+        btnCheckout.TabIndex = 6
+        btnCheckout.Text = "CHECKOUT"
+        btnCheckout.UseVisualStyleBackColor = False
+        ' 
+        ' lblTotalPrice
+        ' 
+        lblTotalPrice.AutoSize = True
+        lblTotalPrice.Font = New Font("Cascadia Mono", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTotalPrice.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        lblTotalPrice.Location = New Point(667, 634)
+        lblTotalPrice.Name = "lblTotalPrice"
+        lblTotalPrice.Size = New Size(0, 32)
+        lblTotalPrice.TabIndex = 5
+        lblTotalPrice.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblTotalName
+        ' 
+        lblTotalName.AutoSize = True
+        lblTotalName.Font = New Font("Cascadia Mono", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTotalName.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        lblTotalName.Location = New Point(667, 193)
+        lblTotalName.Name = "lblTotalName"
+        lblTotalName.Size = New Size(168, 32)
+        lblTotalName.TabIndex = 3
+        lblTotalName.Text = "Total Price"
+        lblTotalName.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lstCart
+        ' 
+        lstCart.FormattingEnabled = True
+        lstCart.ItemHeight = 15
+        lstCart.Location = New Point(591, 228)
+        lstCart.Name = "lstCart"
+        lstCart.Size = New Size(308, 349)
+        lstCart.TabIndex = 2
         ' 
         ' lblCartTitle
         ' 
@@ -1643,15 +1742,401 @@ Partial Class Form1
         lblCartTitle.Text = "MY CART"
         lblCartTitle.TextAlign = ContentAlignment.MiddleCenter
         ' 
+        ' pnlDrums
+        ' 
+        pnlDrums.Controls.Add(Panel6)
+        pnlDrums.Controls.Add(Panel7)
+        pnlDrums.Controls.Add(Panel8)
+        pnlDrums.Controls.Add(Panel9)
+        pnlDrums.Controls.Add(Panel10)
+        pnlDrums.Controls.Add(Panel18)
+        pnlDrums.Controls.Add(lblDrum)
+        pnlDrums.Location = New Point(0, 63)
+        pnlDrums.Name = "pnlDrums"
+        pnlDrums.Size = New Size(1443, 740)
+        pnlDrums.TabIndex = 9
+        pnlDrums.Visible = False
+        ' 
+        ' Panel6
+        ' 
+        Panel6.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel6.BorderStyle = BorderStyle.FixedSingle
+        Panel6.Controls.Add(Label39)
+        Panel6.Controls.Add(Button18)
+        Panel6.Controls.Add(Label40)
+        Panel6.Controls.Add(PictureBox17)
+        Panel6.Location = New Point(1069, 470)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(315, 206)
+        Panel6.TabIndex = 6
+        ' 
+        ' Label39
+        ' 
+        Label39.AutoSize = True
+        Label39.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label39.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label39.Location = New Point(124, 141)
+        Label39.Name = "Label39"
+        Label39.Size = New Size(73, 21)
+        Label39.TabIndex = 5
+        Label39.Text = "$399.99"
+        Label39.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Button18
+        ' 
+        Button18.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        Button18.FlatAppearance.BorderSize = 0
+        Button18.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button18.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Button18.Location = New Point(86, 166)
+        Button18.Name = "Button18"
+        Button18.Size = New Size(130, 35)
+        Button18.TabIndex = 4
+        Button18.Text = "ADD TO CART"
+        Button18.UseVisualStyleBackColor = False
+        ' 
+        ' Label40
+        ' 
+        Label40.AutoSize = True
+        Label40.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label40.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label40.Location = New Point(71, 120)
+        Label40.Name = "Label40"
+        Label40.Size = New Size(181, 21)
+        Label40.TabIndex = 2
+        Label40.Text = "LP Aspire Conga Set"
+        Label40.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox17
+        ' 
+        PictureBox17.BackgroundImage = CType(resources.GetObject("PictureBox17.BackgroundImage"), Image)
+        PictureBox17.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox17.Location = New Point(11, 1)
+        PictureBox17.Name = "PictureBox17"
+        PictureBox17.Size = New Size(299, 141)
+        PictureBox17.TabIndex = 2
+        PictureBox17.TabStop = False
+        ' 
+        ' Panel7
+        ' 
+        Panel7.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel7.BorderStyle = BorderStyle.FixedSingle
+        Panel7.Controls.Add(Label41)
+        Panel7.Controls.Add(Button19)
+        Panel7.Controls.Add(Label42)
+        Panel7.Controls.Add(PictureBox18)
+        Panel7.Location = New Point(568, 471)
+        Panel7.Name = "Panel7"
+        Panel7.Size = New Size(315, 206)
+        Panel7.TabIndex = 5
+        ' 
+        ' Label41
+        ' 
+        Label41.AutoSize = True
+        Label41.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label41.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label41.Location = New Point(107, 140)
+        Label41.Name = "Label41"
+        Label41.Size = New Size(73, 21)
+        Label41.TabIndex = 5
+        Label41.Text = "$299.99"
+        Label41.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Button19
+        ' 
+        Button19.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        Button19.FlatAppearance.BorderSize = 0
+        Button19.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button19.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Button19.Location = New Point(86, 166)
+        Button19.Name = "Button19"
+        Button19.Size = New Size(130, 35)
+        Button19.TabIndex = 4
+        Button19.Text = "ADD TO CART"
+        Button19.UseVisualStyleBackColor = False
+        ' 
+        ' Label42
+        ' 
+        Label42.AutoSize = True
+        Label42.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label42.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label42.Location = New Point(4, 122)
+        Label42.Name = "Label42"
+        Label42.Size = New Size(289, 21)
+        Label42.TabIndex = 2
+        Label42.Text = "Meinl Percussion HCS Cymbal Set"
+        Label42.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox18
+        ' 
+        PictureBox18.BackgroundImage = CType(resources.GetObject("PictureBox18.BackgroundImage"), Image)
+        PictureBox18.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox18.Location = New Point(26, 3)
+        PictureBox18.Name = "PictureBox18"
+        PictureBox18.Size = New Size(257, 124)
+        PictureBox18.TabIndex = 2
+        PictureBox18.TabStop = False
+        ' 
+        ' Panel8
+        ' 
+        Panel8.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel8.BorderStyle = BorderStyle.FixedSingle
+        Panel8.Controls.Add(Label43)
+        Panel8.Controls.Add(Button20)
+        Panel8.Controls.Add(Label44)
+        Panel8.Controls.Add(PictureBox19)
+        Panel8.Location = New Point(56, 470)
+        Panel8.Name = "Panel8"
+        Panel8.Size = New Size(315, 206)
+        Panel8.TabIndex = 4
+        ' 
+        ' Label43
+        ' 
+        Label43.AutoSize = True
+        Label43.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label43.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label43.Location = New Point(115, 145)
+        Label43.Name = "Label43"
+        Label43.Size = New Size(73, 21)
+        Label43.TabIndex = 5
+        Label43.Text = "$799.99"
+        Label43.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Button20
+        ' 
+        Button20.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        Button20.FlatAppearance.BorderSize = 0
+        Button20.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button20.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Button20.Location = New Point(86, 166)
+        Button20.Name = "Button20"
+        Button20.Size = New Size(130, 35)
+        Button20.TabIndex = 4
+        Button20.Text = "ADD TO CART"
+        Button20.UseVisualStyleBackColor = False
+        ' 
+        ' Label44
+        ' 
+        Label44.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label44.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label44.Location = New Point(11, 100)
+        Label44.Name = "Label44"
+        Label44.Size = New Size(286, 45)
+        Label44.TabIndex = 2
+        Label44.Text = "Pearl Export EXX 5-Piece Drum Set"
+        Label44.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox19
+        ' 
+        PictureBox19.BackgroundImage = CType(resources.GetObject("PictureBox19.BackgroundImage"), Image)
+        PictureBox19.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox19.Location = New Point(5, -24)
+        PictureBox19.Name = "PictureBox19"
+        PictureBox19.Size = New Size(305, 151)
+        PictureBox19.TabIndex = 2
+        PictureBox19.TabStop = False
+        ' 
+        ' Panel9
+        ' 
+        Panel9.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel9.BorderStyle = BorderStyle.FixedSingle
+        Panel9.Controls.Add(Label45)
+        Panel9.Controls.Add(Button21)
+        Panel9.Controls.Add(Label46)
+        Panel9.Controls.Add(PictureBox20)
+        Panel9.Location = New Point(1069, 125)
+        Panel9.Name = "Panel9"
+        Panel9.Size = New Size(315, 206)
+        Panel9.TabIndex = 3
+        ' 
+        ' Label45
+        ' 
+        Label45.AutoSize = True
+        Label45.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label45.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label45.Location = New Point(106, 145)
+        Label45.Name = "Label45"
+        Label45.Size = New Size(91, 21)
+        Label45.TabIndex = 5
+        Label45.Text = "$1,099.99"
+        Label45.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Button21
+        ' 
+        Button21.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        Button21.FlatAppearance.BorderSize = 0
+        Button21.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button21.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Button21.Location = New Point(86, 167)
+        Button21.Name = "Button21"
+        Button21.Size = New Size(130, 35)
+        Button21.TabIndex = 4
+        Button21.Text = "ADD TO CART"
+        Button21.UseVisualStyleBackColor = False
+        ' 
+        ' Label46
+        ' 
+        Label46.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label46.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label46.Location = New Point(56, 102)
+        Label46.Name = "Label46"
+        Label46.Size = New Size(208, 51)
+        Label46.TabIndex = 2
+        Label46.Text = "Yamaha Stage Custom Birch 5pc Drum Set"
+        Label46.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox20
+        ' 
+        PictureBox20.BackgroundImage = CType(resources.GetObject("PictureBox20.BackgroundImage"), Image)
+        PictureBox20.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox20.Location = New Point(24, -30)
+        PictureBox20.Name = "PictureBox20"
+        PictureBox20.Size = New Size(249, 157)
+        PictureBox20.TabIndex = 2
+        PictureBox20.TabStop = False
+        ' 
+        ' Panel10
+        ' 
+        Panel10.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel10.BorderStyle = BorderStyle.FixedSingle
+        Panel10.Controls.Add(Label47)
+        Panel10.Controls.Add(Button22)
+        Panel10.Controls.Add(Label48)
+        Panel10.Controls.Add(PictureBox21)
+        Panel10.Location = New Point(568, 126)
+        Panel10.Name = "Panel10"
+        Panel10.Size = New Size(315, 206)
+        Panel10.TabIndex = 2
+        ' 
+        ' Label47
+        ' 
+        Label47.AutoSize = True
+        Label47.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label47.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label47.Location = New Point(107, 140)
+        Label47.Name = "Label47"
+        Label47.Size = New Size(91, 21)
+        Label47.TabIndex = 5
+        Label47.Text = "$3,499.99"
+        Label47.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Button22
+        ' 
+        Button22.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        Button22.FlatAppearance.BorderSize = 0
+        Button22.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button22.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Button22.Location = New Point(86, 166)
+        Button22.Name = "Button22"
+        Button22.Size = New Size(130, 35)
+        Button22.TabIndex = 4
+        Button22.Text = "ADD TO CART"
+        Button22.UseVisualStyleBackColor = False
+        ' 
+        ' Label48
+        ' 
+        Label48.AutoSize = True
+        Label48.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label48.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label48.Location = New Point(39, 118)
+        Label48.Name = "Label48"
+        Label48.Size = New Size(244, 21)
+        Label48.TabIndex = 2
+        Label48.Text = "Roland TD-27KV V-Drums Kit"
+        Label48.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox21
+        ' 
+        PictureBox21.BackgroundImage = CType(resources.GetObject("PictureBox21.BackgroundImage"), Image)
+        PictureBox21.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox21.Location = New Point(3, -20)
+        PictureBox21.Name = "PictureBox21"
+        PictureBox21.Size = New Size(321, 177)
+        PictureBox21.TabIndex = 2
+        PictureBox21.TabStop = False
+        ' 
+        ' Panel18
+        ' 
+        Panel18.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel18.BorderStyle = BorderStyle.FixedSingle
+        Panel18.Controls.Add(Label49)
+        Panel18.Controls.Add(Button23)
+        Panel18.Controls.Add(Label50)
+        Panel18.Controls.Add(PictureBox22)
+        Panel18.Location = New Point(56, 125)
+        Panel18.Name = "Panel18"
+        Panel18.Size = New Size(315, 206)
+        Panel18.TabIndex = 1
+        ' 
+        ' Label49
+        ' 
+        Label49.AutoSize = True
+        Label49.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label49.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label49.Location = New Point(124, 140)
+        Label49.Name = "Label49"
+        Label49.Size = New Size(46, 21)
+        Label49.TabIndex = 5
+        Label49.Text = "$159"
+        Label49.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Button23
+        ' 
+        Button23.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        Button23.FlatAppearance.BorderSize = 0
+        Button23.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button23.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Button23.Location = New Point(86, 166)
+        Button23.Name = "Button23"
+        Button23.Size = New Size(130, 35)
+        Button23.TabIndex = 4
+        Button23.Text = "ADD TO CART"
+        Button23.UseVisualStyleBackColor = False
+        ' 
+        ' Label50
+        ' 
+        Label50.AutoSize = True
+        Label50.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label50.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label50.Location = New Point(40, 106)
+        Label50.Name = "Label50"
+        Label50.Size = New Size(226, 21)
+        Label50.TabIndex = 2
+        Label50.Text = "Alesis SR16 Drum Machine"
+        Label50.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox22
+        ' 
+        PictureBox22.BackgroundImage = CType(resources.GetObject("PictureBox22.BackgroundImage"), Image)
+        PictureBox22.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox22.Location = New Point(22, -3)
+        PictureBox22.Name = "PictureBox22"
+        PictureBox22.Size = New Size(275, 127)
+        PictureBox22.TabIndex = 2
+        PictureBox22.TabStop = False
+        ' 
+        ' lblDrum
+        ' 
+        lblDrum.AutoSize = True
+        lblDrum.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblDrum.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        lblDrum.Location = New Point(282, 0)
+        lblDrum.Name = "lblDrum"
+        lblDrum.Size = New Size(950, 127)
+        lblDrum.TabIndex = 0
+        lblDrum.Text = "DRUMS/PERCUSSION"
+        lblDrum.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(62), CByte(66), CByte(58))
         ClientSize = New Size(1443, 806)
-        Controls.Add(pnlKeyboard)
-        Controls.Add(pnlCart)
         Controls.Add(pnlGuitar)
+        Controls.Add(pnlCart)
+        Controls.Add(pnlDrums)
+        Controls.Add(pnlKeyboard)
         Controls.Add(pnlAbout)
         Controls.Add(pnlHome)
         Controls.Add(Panel2)
@@ -1733,6 +2218,26 @@ Partial Class Form1
         CType(PictureBox16, ComponentModel.ISupportInitialize).EndInit()
         pnlCart.ResumeLayout(False)
         pnlCart.PerformLayout()
+        pnlDrums.ResumeLayout(False)
+        pnlDrums.PerformLayout()
+        Panel6.ResumeLayout(False)
+        Panel6.PerformLayout()
+        CType(PictureBox17, ComponentModel.ISupportInitialize).EndInit()
+        Panel7.ResumeLayout(False)
+        Panel7.PerformLayout()
+        CType(PictureBox18, ComponentModel.ISupportInitialize).EndInit()
+        Panel8.ResumeLayout(False)
+        Panel8.PerformLayout()
+        CType(PictureBox19, ComponentModel.ISupportInitialize).EndInit()
+        Panel9.ResumeLayout(False)
+        Panel9.PerformLayout()
+        CType(PictureBox20, ComponentModel.ISupportInitialize).EndInit()
+        Panel10.ResumeLayout(False)
+        Panel10.PerformLayout()
+        CType(PictureBox21, ComponentModel.ISupportInitialize).EndInit()
+        Panel18.ResumeLayout(False)
+        Panel18.PerformLayout()
+        CType(PictureBox22, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -1856,5 +2361,41 @@ Partial Class Form1
     Friend WithEvents lblKeyboards As Label
     Friend WithEvents pnlCart As Panel
     Friend WithEvents lblCartTitle As Label
+    Friend WithEvents pnlDrums As Panel
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Label39 As Label
+    Friend WithEvents Button18 As Button
+    Friend WithEvents Label40 As Label
+    Friend WithEvents PictureBox17 As PictureBox
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Label41 As Label
+    Friend WithEvents Button19 As Button
+    Friend WithEvents Label42 As Label
+    Friend WithEvents PictureBox18 As PictureBox
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Label43 As Label
+    Friend WithEvents Button20 As Button
+    Friend WithEvents Label44 As Label
+    Friend WithEvents PictureBox19 As PictureBox
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Label45 As Label
+    Friend WithEvents Button21 As Button
+    Friend WithEvents Label46 As Label
+    Friend WithEvents PictureBox20 As PictureBox
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents Label47 As Label
+    Friend WithEvents Button22 As Button
+    Friend WithEvents Label48 As Label
+    Friend WithEvents PictureBox21 As PictureBox
+    Friend WithEvents Panel18 As Panel
+    Friend WithEvents Label49 As Label
+    Friend WithEvents Button23 As Button
+    Friend WithEvents Label50 As Label
+    Friend WithEvents PictureBox22 As PictureBox
+    Friend WithEvents lblDrum As Label
+    Friend WithEvents lblTotalName As Label
+    Friend WithEvents lstCart As ListBox
+    Friend WithEvents lblTotalPrice As Label
+    Friend WithEvents btnCheckout As Button
 
 End Class
