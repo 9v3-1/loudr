@@ -76,6 +76,8 @@ Partial Class Form1
         lblAbout1 = New Label()
         lblAbout = New Label()
         Label3 = New Label()
+        pnlAddedCart = New Panel()
+        lblAdded = New Label()
         lblGuitar = New Label()
         pnlStrat = New Panel()
         Label8 = New Label()
@@ -198,6 +200,7 @@ Partial Class Form1
         Panel5.SuspendLayout()
         pnlHome.SuspendLayout()
         pnlAbout.SuspendLayout()
+        pnlAddedCart.SuspendLayout()
         pnlStrat.SuspendLayout()
         CType(imgBoxStrat, ComponentModel.ISupportInitialize).BeginInit()
         pnlBass.SuspendLayout()
@@ -880,6 +883,28 @@ Partial Class Form1
         Label3.TabIndex = 0
         Label3.Text = "ABOUT US"
         Label3.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' pnlAddedCart
+        ' 
+        pnlAddedCart.BackColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        pnlAddedCart.Controls.Add(lblAdded)
+        pnlAddedCart.Enabled = False
+        pnlAddedCart.Location = New Point(1255, 99)
+        pnlAddedCart.Name = "pnlAddedCart"
+        pnlAddedCart.Size = New Size(165, 54)
+        pnlAddedCart.TabIndex = 3
+        ' 
+        ' lblAdded
+        ' 
+        lblAdded.AutoSize = True
+        lblAdded.FlatStyle = FlatStyle.Flat
+        lblAdded.Font = New Font("Cascadia Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblAdded.ForeColor = Color.Black
+        lblAdded.Location = New Point(3, 11)
+        lblAdded.Name = "lblAdded"
+        lblAdded.Size = New Size(166, 25)
+        lblAdded.TabIndex = 4
+        lblAdded.Text = "Added to Cart!"
         ' 
         ' lblGuitar
         ' 
@@ -2135,6 +2160,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(62), CByte(66), CByte(58))
         ClientSize = New Size(1443, 806)
+        Controls.Add(pnlAddedCart)
         Controls.Add(pnlAbout)
         Controls.Add(pnlHome)
         Controls.Add(pnlCart)
@@ -2178,6 +2204,8 @@ Partial Class Form1
         pnlHome.PerformLayout()
         pnlAbout.ResumeLayout(False)
         pnlAbout.PerformLayout()
+        pnlAddedCart.ResumeLayout(False)
+        pnlAddedCart.PerformLayout()
         pnlStrat.ResumeLayout(False)
         pnlStrat.PerformLayout()
         CType(imgBoxStrat, ComponentModel.ISupportInitialize).EndInit()
@@ -2399,5 +2427,7 @@ Partial Class Form1
     Friend WithEvents btnCheckout As Button
     Friend WithEvents btnClearCart As Button
     Friend WithEvents lblAbout1 As Label
+    Friend WithEvents pnlAddedCart As Panel
+    Friend WithEvents lblAdded As Label
 
 End Class

@@ -2,6 +2,38 @@
 
 Public Class Form1
     Private cartItems As New List(Of CartItem)
+    Private WithEvents pnlAddedCartTimer As New Timer() ' Timer to hide the added to cart panel after a second
+    Public Sub New()
+        InitializeComponent()
+        pnlAddedCartTimer.Interval = 1000 ' Set the timer to 1 second
+    End Sub
+
+    ' Event handler for the Timerevent
+    Private Sub pnlAddedCartTimer_Tick(sender As Object, e As EventArgs) Handles pnlAddedCartTimer.Tick
+        pnlAddedCart.Visible = False
+        pnlAddedCartTimer.Stop()
+    End Sub
+
+    ' AddToCart method is defined only once and is used consitently on all event handlers 
+    Private Sub AddToCart(itemName As String, price As Decimal)
+        cartItems.Add(New CartItem(itemName, price)) ' Add the item to the cart
+        UpdateCart() ' Method yo refresh cart UI
+        pnlAddedCart.Visible = True
+        pnlAddedCart.BringToFront()
+        pnlAddedCartTimer.Start() ' Start the timer
+    End Sub
+
+    ' method updates the cart UI with the current items and total price
+    Private Sub UpdateCart()
+        Dim totalPrice As Decimal = cartItems.Sum(Function(item) item.Price) ' Calculate total price
+        ' Update the cart UI with the items and total price
+        lstCart.Items.Clear() ' Clear the current items in the list
+        For Each item In cartItems
+            lstCart.Items.Add($"{item.ItemName} - ${item.Price}") ' Add each item to the list
+        Next
+
+        lblTotalPrice.Text = $"Total: ${totalPrice}" ' Update the total price label
+    End Sub
 
     ' ------------------------Event handlers for navigation buttons-----------------------
     Private Sub btnHomeAbout_Click(sender As Object, e As EventArgs) Handles btnHomeAbout.Click
@@ -89,6 +121,7 @@ Public Class Form1
         pnlKeyboard.Visible = False
         pnlCart.Visible = False
         pnlDrums.Visible = False
+        pnlAddedCart.Visible = False
     End Sub
 
     Public Class CartItem ' Declares a class to represent an item in the cart with name and price variables
@@ -101,28 +134,11 @@ Public Class Form1
         End Sub
     End Class
 
-    ' Adds an item to the cart and updates the cart UI
-    Private Sub AddToCart(itemName As String, price As Decimal)
-        cartItems.Add(New CartItem(itemName, price)) ' Add the item to the cart
-        UpdateCart() ' Refresh the cart UI
-    End Sub
-
-    ' Updates the cart UI with the current items and total price
-    Private Sub UpdateCart()
-        Dim totalPrice As Decimal = cartItems.Sum(Function(item) item.Price) ' Calculate total price
-        ' Update the cart UI with the items and total price
-        lstCart.Items.Clear() ' Clear the current items in the list
-        For Each item In cartItems
-            lstCart.Items.Add($"{item.ItemName} - ${item.Price}") ' Add each item to the list
-        Next
-
-        lblTotalPrice.Text = $"Total: ${totalPrice}" ' Update the total price label
-    End Sub
-
     ' -----------------Event handlers for adding GUITAR items to the cart-----------------------
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         AddToCart("Fender Standard Stratocaster", 1200) ' Add Fender Standard Stratocaster to the cart
     End Sub
+
     Private Sub btnBass_Click(sender As Object, e As EventArgs) Handles btnBass.Click
         AddToCart("Fender Player II Bass", 1400) ' Add Fender Player II Bass to the cart
     End Sub
@@ -143,9 +159,7 @@ Public Class Form1
         AddToCart("Taylor GS Mini", 599) ' Add Taylor GS Mini to the cart
     End Sub
 
-
     '-------------------Event handlers for adding KEYBOARD items to the cart-----------------------
-
     Private Sub btnElektron_Click(sender As Object, e As EventArgs) Handles btnElektron.Click
         AddToCart("Elektron Digitone II", 999) ' Add Elektron Digitone II to the cart
     End Sub
@@ -169,7 +183,6 @@ Public Class Form1
     Private Sub btnASM_Click(sender As Object, e As EventArgs) Handles btnASM.Click
         AddToCart("ASM Hydrasynth", 649) ' Add ASM Hydrasynth to the cart
     End Sub
-
 
     '-------------------Event handlers for adding DRUM items to the cart-----------------------
     Private Sub btnAlesis_Click(sender As Object, e As EventArgs) Handles btnAlesis.Click
