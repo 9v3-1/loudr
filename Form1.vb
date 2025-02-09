@@ -42,6 +42,7 @@ Public Class Form1
         pnlKeyboard.Visible = False
         pnlCart.Visible = False
         pnlDrums.Visible = False
+        pnlStudio.Visible = False
 
         pnlAbout.Visible = True ' Shows the About panel when the About button is clicked 
         pnlAbout.BringToFront()
@@ -53,6 +54,7 @@ Public Class Form1
         pnlKeyboard.Visible = False
         pnlCart.Visible = False
         pnlDrums.Visible = False
+        pnlStudio.Visible = False
 
         pnlAbout.Visible = True ' Shows the About panel when the About button is clicked 
         pnlAbout.BringToFront()
@@ -65,6 +67,7 @@ Public Class Form1
         pnlKeyboard.Visible = False
         pnlCart.Visible = False
         pnlDrums.Visible = False
+        pnlStudio.Visible = False
 
         ' Shows the Home panel when the Home button is clicked
         pnlHome.Visible = True
@@ -77,6 +80,7 @@ Public Class Form1
         pnlKeyboard.Visible = False
         pnlCart.Visible = False
         pnlDrums.Visible = False
+        pnlStudio.Visible = False
 
         pnlGuitar.Visible = True ' Shows the Guitar panel when the Guitar button is clicked
         pnlGuitar.BringToFront()
@@ -88,9 +92,22 @@ Public Class Form1
         pnlGuitar.Visible = False
         pnlCart.Visible = False
         pnlDrums.Visible = False
+        pnlStudio.Visible = False
 
         pnlKeyboard.Visible = True ' Shows the Keyboard panel when the Keyboard button is clicked
         pnlKeyboard.BringToFront()
+    End Sub
+    Private Sub btnStudio_Click(sender As Object, e As EventArgs) Handles btnStudio.Click
+        pnlAbout.Visible = False
+        pnlHome.Visible = False
+        pnlGuitar.Visible = False
+        pnlCart.Visible = False
+        pnlDrums.Visible = False
+        pnlKeyboard.Visible = False
+
+        pnlStudio.Visible = True
+        pnlStudio.BringToFront()
+
     End Sub
 
     Private Sub btnCart_Click(sender As Object, e As EventArgs) Handles btnCart.Click
@@ -98,6 +115,7 @@ Public Class Form1
         pnlHome.Visible = False
         pnlGuitar.Visible = False
         pnlDrums.Visible = False
+        pnlStudio.Visible = False
 
         pnlCart.Visible = True ' Shows the Cart panel when the Cart button is clicked
         pnlCart.BringToFront()
@@ -108,6 +126,7 @@ Public Class Form1
         pnlHome.Visible = False
         pnlGuitar.Visible = False
         pnlCart.Visible = False
+        pnlStudio.Visible = False
 
         pnlDrums.Visible = True ' Shows the Drums panel when the Drums button is clicked
         pnlDrums.BringToFront()
@@ -122,6 +141,7 @@ Public Class Form1
         pnlCart.Visible = False
         pnlDrums.Visible = False
         pnlAddedCart.Visible = False
+        pnlStudio.Visible = False
     End Sub
 
     Public Class CartItem ' Declares a class to represent an item in the cart with name and price variables
@@ -208,6 +228,33 @@ Public Class Form1
     Private Sub btnAspire_Click(sender As Object, e As EventArgs) Handles btnAspire.Click
         AddToCart("LP Aspire Conga Set", 399.99) ' Add LP Aspire Conga Set to the cart
     End Sub
+
+    '-------------------Event handlers for adding STUDIO items to the cart-----------------------
+    Private Sub btnSM58_Click(sender As Object, e As EventArgs) Handles btnSM58.Click
+        AddToCart("Shure SM58 Dynamic Microphone", 99) 'Im tired of commenting man
+    End Sub
+
+    Private Sub btnSM57_Click(sender As Object, e As EventArgs) Handles btnSM57.Click
+        AddToCart("Shure SM57 Dynamic Microphone", 99)
+    End Sub
+
+    Private Sub btnWA44_Click(sender As Object, e As EventArgs) Handles btnWA44.Click
+        AddToCart("Warm Audio WA-44 Studio Ribbon Microphone", 994)
+    End Sub
+
+    Private Sub btnStudioLive_Click(sender As Object, e As EventArgs) Handles btnStudioLive.Click
+        AddToCart("Presonus StudioLive 16.0.2 Digital Mixer", 1249)
+    End Sub
+
+    Private Sub btnJBL_Click(sender As Object, e As EventArgs) Handles btnJBL.Click
+        AddToCart("JBL PRX415M Stage Monitor", 759)
+    End Sub
+
+    Private Sub btnEris_Click(sender As Object, e As EventArgs) Handles btnEris.Click
+        AddToCart("Presonus Eris 3.5 Studio Monitors", 99.99)
+    End Sub
+
+
 
     ' Handles the checkout process
     Private Sub btnCheckout_Click(sender As Object, e As EventArgs) Handles btnCheckout.Click

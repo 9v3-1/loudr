@@ -181,6 +181,38 @@ Partial Class Form1
         Label50 = New Label()
         PictureBox22 = New PictureBox()
         lblDrum = New Label()
+        pnlStudio = New Panel()
+        Panel19 = New Panel()
+        Label51 = New Label()
+        btnEris = New Button()
+        Label52 = New Label()
+        PictureBox23 = New PictureBox()
+        Panel20 = New Panel()
+        Label53 = New Label()
+        btnJBL = New Button()
+        Label54 = New Label()
+        PictureBox24 = New PictureBox()
+        Panel21 = New Panel()
+        Label55 = New Label()
+        btnStudioLive = New Button()
+        Label56 = New Label()
+        PictureBox25 = New PictureBox()
+        Panel22 = New Panel()
+        Label57 = New Label()
+        btnWA44 = New Button()
+        Label58 = New Label()
+        PictureBox26 = New PictureBox()
+        Panel23 = New Panel()
+        Label59 = New Label()
+        btnSM57 = New Button()
+        Label60 = New Label()
+        PictureBox27 = New PictureBox()
+        Panel24 = New Panel()
+        Label61 = New Label()
+        btnSM58 = New Button()
+        Label62 = New Label()
+        PictureBox28 = New PictureBox()
+        Label63 = New Label()
         pnlNav.SuspendLayout()
         Panel11.SuspendLayout()
         Panel12.SuspendLayout()
@@ -241,6 +273,19 @@ Partial Class Form1
         CType(PictureBox21, ComponentModel.ISupportInitialize).BeginInit()
         Panel18.SuspendLayout()
         CType(PictureBox22, ComponentModel.ISupportInitialize).BeginInit()
+        pnlStudio.SuspendLayout()
+        Panel19.SuspendLayout()
+        CType(PictureBox23, ComponentModel.ISupportInitialize).BeginInit()
+        Panel20.SuspendLayout()
+        CType(PictureBox24, ComponentModel.ISupportInitialize).BeginInit()
+        Panel21.SuspendLayout()
+        CType(PictureBox25, ComponentModel.ISupportInitialize).BeginInit()
+        Panel22.SuspendLayout()
+        CType(PictureBox26, ComponentModel.ISupportInitialize).BeginInit()
+        Panel23.SuspendLayout()
+        CType(PictureBox27, ComponentModel.ISupportInitialize).BeginInit()
+        Panel24.SuspendLayout()
+        CType(PictureBox28, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' pnlNav
@@ -287,7 +332,7 @@ Partial Class Form1
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label14.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label14.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label14.Location = New Point(124, 140)
         Label14.Name = "Label14"
@@ -312,7 +357,7 @@ Partial Class Form1
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label15.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label15.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label15.Location = New Point(80, 102)
         Label15.Name = "Label15"
@@ -347,7 +392,7 @@ Partial Class Form1
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label16.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label16.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label16.Location = New Point(124, 140)
         Label16.Name = "Label16"
@@ -372,7 +417,7 @@ Partial Class Form1
         ' Label17
         ' 
         Label17.AutoSize = True
-        Label17.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label17.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label17.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label17.Location = New Point(77, 101)
         Label17.Name = "Label17"
@@ -407,7 +452,7 @@ Partial Class Form1
         ' Label18
         ' 
         Label18.AutoSize = True
-        Label18.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label18.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label18.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label18.Location = New Point(124, 140)
         Label18.Name = "Label18"
@@ -432,7 +477,7 @@ Partial Class Form1
         ' Label19
         ' 
         Label19.AutoSize = True
-        Label19.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label19.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label19.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label19.Location = New Point(96, 117)
         Label19.Name = "Label19"
@@ -467,7 +512,7 @@ Partial Class Form1
         ' Label20
         ' 
         Label20.AutoSize = True
-        Label20.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label20.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label20.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label20.Location = New Point(124, 140)
         Label20.Name = "Label20"
@@ -492,7 +537,7 @@ Partial Class Form1
         ' Label21
         ' 
         Label21.AutoSize = True
-        Label21.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label21.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label21.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label21.Location = New Point(24, 102)
         Label21.Name = "Label21"
@@ -527,7 +572,7 @@ Partial Class Form1
         ' Label22
         ' 
         Label22.AutoSize = True
-        Label22.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label22.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label22.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label22.Location = New Point(124, 140)
         Label22.Name = "Label22"
@@ -552,7 +597,7 @@ Partial Class Form1
         ' Label23
         ' 
         Label23.AutoSize = True
-        Label23.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label23.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label23.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label23.Location = New Point(12, 102)
         Label23.Name = "Label23"
@@ -587,7 +632,7 @@ Partial Class Form1
         ' Label24
         ' 
         Label24.AutoSize = True
-        Label24.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label24.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label24.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label24.Location = New Point(124, 140)
         Label24.Name = "Label24"
@@ -612,7 +657,7 @@ Partial Class Form1
         ' Label25
         ' 
         Label25.AutoSize = True
-        Label25.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label25.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label25.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label25.Location = New Point(24, 102)
         Label25.Name = "Label25"
@@ -634,7 +679,7 @@ Partial Class Form1
         ' Label26
         ' 
         Label26.AutoSize = True
-        Label26.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label26.Font = New Font("Cascadia Mono", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label26.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label26.Location = New Point(508, -4)
         Label26.Name = "Label26"
@@ -656,7 +701,7 @@ Partial Class Form1
         btnHome.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
         btnHome.FlatAppearance.BorderSize = 0
         btnHome.FlatStyle = FlatStyle.Flat
-        btnHome.Font = New Font("Gadugi", 24.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnHome.Font = New Font("Gadugi", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnHome.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         btnHome.Location = New Point(83, 17)
         btnHome.Name = "btnHome"
@@ -828,7 +873,7 @@ Partial Class Form1
         ' lblLoudrHome
         ' 
         lblLoudrHome.AutoSize = True
-        lblLoudrHome.Font = New Font("Cascadia Mono", 150.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblLoudrHome.Font = New Font("Cascadia Mono", 150F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblLoudrHome.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         lblLoudrHome.Location = New Point(390, 48)
         lblLoudrHome.Name = "lblLoudrHome"
@@ -875,7 +920,7 @@ Partial Class Form1
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Cascadia Mono", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label3.Location = New Point(479, 0)
         Label3.Name = "Label3"
@@ -909,7 +954,7 @@ Partial Class Form1
         ' lblGuitar
         ' 
         lblGuitar.AutoSize = True
-        lblGuitar.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblGuitar.Font = New Font("Cascadia Mono", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblGuitar.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         lblGuitar.Location = New Point(508, -4)
         lblGuitar.Name = "lblGuitar"
@@ -934,7 +979,7 @@ Partial Class Form1
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label8.Location = New Point(124, 140)
         Label8.Name = "Label8"
@@ -959,7 +1004,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label1.Location = New Point(24, 102)
         Label1.Name = "Label1"
@@ -994,7 +1039,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label2.Location = New Point(124, 140)
         Label2.Name = "Label2"
@@ -1019,7 +1064,7 @@ Partial Class Form1
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label4.Location = New Point(12, 102)
         Label4.Name = "Label4"
@@ -1054,7 +1099,7 @@ Partial Class Form1
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label5.Location = New Point(124, 140)
         Label5.Name = "Label5"
@@ -1079,7 +1124,7 @@ Partial Class Form1
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label6.Location = New Point(24, 102)
         Label6.Name = "Label6"
@@ -1114,7 +1159,7 @@ Partial Class Form1
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label12.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label12.Location = New Point(124, 140)
         Label12.Name = "Label12"
@@ -1139,7 +1184,7 @@ Partial Class Form1
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label13.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label13.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label13.Location = New Point(96, 117)
         Label13.Name = "Label13"
@@ -1174,7 +1219,7 @@ Partial Class Form1
         ' Label10
         ' 
         Label10.AutoSize = True
-        Label10.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label10.Location = New Point(124, 140)
         Label10.Name = "Label10"
@@ -1199,7 +1244,7 @@ Partial Class Form1
         ' Label11
         ' 
         Label11.AutoSize = True
-        Label11.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label11.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label11.Location = New Point(77, 101)
         Label11.Name = "Label11"
@@ -1234,7 +1279,7 @@ Partial Class Form1
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label7.Location = New Point(124, 140)
         Label7.Name = "Label7"
@@ -1259,7 +1304,7 @@ Partial Class Form1
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label9.Location = New Point(80, 102)
         Label9.Name = "Label9"
@@ -1324,7 +1369,7 @@ Partial Class Form1
         ' Label27
         ' 
         Label27.AutoSize = True
-        Label27.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label27.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label27.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label27.Location = New Point(124, 140)
         Label27.Name = "Label27"
@@ -1349,7 +1394,7 @@ Partial Class Form1
         ' Label28
         ' 
         Label28.AutoSize = True
-        Label28.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label28.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label28.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label28.Location = New Point(49, 102)
         Label28.Name = "Label28"
@@ -1384,7 +1429,7 @@ Partial Class Form1
         ' Label29
         ' 
         Label29.AutoSize = True
-        Label29.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label29.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label29.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label29.Location = New Point(107, 140)
         Label29.Name = "Label29"
@@ -1409,7 +1454,7 @@ Partial Class Form1
         ' Label30
         ' 
         Label30.AutoSize = True
-        Label30.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label30.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label30.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label30.Location = New Point(56, 101)
         Label30.Name = "Label30"
@@ -1444,7 +1489,7 @@ Partial Class Form1
         ' Label31
         ' 
         Label31.AutoSize = True
-        Label31.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label31.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label31.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label31.Location = New Point(124, 145)
         Label31.Name = "Label31"
@@ -1468,7 +1513,7 @@ Partial Class Form1
         ' 
         ' Label32
         ' 
-        Label32.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label32.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label32.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label32.Location = New Point(11, 100)
         Label32.Name = "Label32"
@@ -1503,7 +1548,7 @@ Partial Class Form1
         ' Label33
         ' 
         Label33.AutoSize = True
-        Label33.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label33.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label33.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label33.Location = New Point(107, 140)
         Label33.Name = "Label33"
@@ -1528,7 +1573,7 @@ Partial Class Form1
         ' Label34
         ' 
         Label34.AutoSize = True
-        Label34.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label34.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label34.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label34.Location = New Point(80, 102)
         Label34.Name = "Label34"
@@ -1563,7 +1608,7 @@ Partial Class Form1
         ' Label35
         ' 
         Label35.AutoSize = True
-        Label35.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label35.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label35.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label35.Location = New Point(124, 140)
         Label35.Name = "Label35"
@@ -1588,7 +1633,7 @@ Partial Class Form1
         ' Label36
         ' 
         Label36.AutoSize = True
-        Label36.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label36.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label36.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label36.Location = New Point(56, 105)
         Label36.Name = "Label36"
@@ -1623,7 +1668,7 @@ Partial Class Form1
         ' Label37
         ' 
         Label37.AutoSize = True
-        Label37.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label37.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label37.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label37.Location = New Point(124, 140)
         Label37.Name = "Label37"
@@ -1648,7 +1693,7 @@ Partial Class Form1
         ' Label38
         ' 
         Label38.AutoSize = True
-        Label38.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label38.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label38.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label38.Location = New Point(60, 106)
         Label38.Name = "Label38"
@@ -1670,7 +1715,7 @@ Partial Class Form1
         ' lblKeyboards
         ' 
         lblKeyboards.AutoSize = True
-        lblKeyboards.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblKeyboards.Font = New Font("Cascadia Mono", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblKeyboards.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         lblKeyboards.Location = New Point(261, -2)
         lblKeyboards.Name = "lblKeyboards"
@@ -1724,7 +1769,7 @@ Partial Class Form1
         ' lblTotalPrice
         ' 
         lblTotalPrice.AutoSize = True
-        lblTotalPrice.Font = New Font("Cascadia Mono", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTotalPrice.Font = New Font("Cascadia Mono", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblTotalPrice.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         lblTotalPrice.Location = New Point(667, 676)
         lblTotalPrice.Name = "lblTotalPrice"
@@ -1735,7 +1780,7 @@ Partial Class Form1
         ' lblTotalName
         ' 
         lblTotalName.AutoSize = True
-        lblTotalName.Font = New Font("Cascadia Mono", 18.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTotalName.Font = New Font("Cascadia Mono", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblTotalName.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         lblTotalName.Location = New Point(667, 193)
         lblTotalName.Name = "lblTotalName"
@@ -1760,7 +1805,7 @@ Partial Class Form1
         ' lblCartTitle
         ' 
         lblCartTitle.AutoSize = True
-        lblCartTitle.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblCartTitle.Font = New Font("Cascadia Mono", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblCartTitle.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         lblCartTitle.Location = New Point(508, 26)
         lblCartTitle.Name = "lblCartTitle"
@@ -1800,7 +1845,7 @@ Partial Class Form1
         ' Label39
         ' 
         Label39.AutoSize = True
-        Label39.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label39.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label39.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label39.Location = New Point(124, 141)
         Label39.Name = "Label39"
@@ -1825,7 +1870,7 @@ Partial Class Form1
         ' Label40
         ' 
         Label40.AutoSize = True
-        Label40.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label40.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label40.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label40.Location = New Point(71, 120)
         Label40.Name = "Label40"
@@ -1860,7 +1905,7 @@ Partial Class Form1
         ' Label41
         ' 
         Label41.AutoSize = True
-        Label41.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label41.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label41.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label41.Location = New Point(107, 140)
         Label41.Name = "Label41"
@@ -1885,7 +1930,7 @@ Partial Class Form1
         ' Label42
         ' 
         Label42.AutoSize = True
-        Label42.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label42.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label42.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label42.Location = New Point(4, 122)
         Label42.Name = "Label42"
@@ -1920,7 +1965,7 @@ Partial Class Form1
         ' Label43
         ' 
         Label43.AutoSize = True
-        Label43.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label43.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label43.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label43.Location = New Point(115, 145)
         Label43.Name = "Label43"
@@ -1944,7 +1989,7 @@ Partial Class Form1
         ' 
         ' Label44
         ' 
-        Label44.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label44.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label44.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label44.Location = New Point(11, 100)
         Label44.Name = "Label44"
@@ -1979,7 +2024,7 @@ Partial Class Form1
         ' Label45
         ' 
         Label45.AutoSize = True
-        Label45.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label45.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label45.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label45.Location = New Point(106, 145)
         Label45.Name = "Label45"
@@ -2003,7 +2048,7 @@ Partial Class Form1
         ' 
         ' Label46
         ' 
-        Label46.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label46.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label46.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label46.Location = New Point(56, 102)
         Label46.Name = "Label46"
@@ -2038,7 +2083,7 @@ Partial Class Form1
         ' Label47
         ' 
         Label47.AutoSize = True
-        Label47.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label47.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label47.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label47.Location = New Point(107, 140)
         Label47.Name = "Label47"
@@ -2063,7 +2108,7 @@ Partial Class Form1
         ' Label48
         ' 
         Label48.AutoSize = True
-        Label48.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label48.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label48.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label48.Location = New Point(39, 118)
         Label48.Name = "Label48"
@@ -2098,7 +2143,7 @@ Partial Class Form1
         ' Label49
         ' 
         Label49.AutoSize = True
-        Label49.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label49.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label49.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label49.Location = New Point(124, 140)
         Label49.Name = "Label49"
@@ -2123,7 +2168,7 @@ Partial Class Form1
         ' Label50
         ' 
         Label50.AutoSize = True
-        Label50.Font = New Font("Cascadia Mono", 12.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label50.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label50.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         Label50.Location = New Point(40, 106)
         Label50.Name = "Label50"
@@ -2145,7 +2190,7 @@ Partial Class Form1
         ' lblDrum
         ' 
         lblDrum.AutoSize = True
-        lblDrum.Font = New Font("Cascadia Mono", 72.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblDrum.Font = New Font("Cascadia Mono", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblDrum.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
         lblDrum.Location = New Point(282, 0)
         lblDrum.Name = "lblDrum"
@@ -2154,22 +2199,409 @@ Partial Class Form1
         lblDrum.Text = "DRUMS/PERCUSSION"
         lblDrum.TextAlign = ContentAlignment.MiddleCenter
         ' 
+        ' pnlStudio
+        ' 
+        pnlStudio.Controls.Add(Panel19)
+        pnlStudio.Controls.Add(Panel20)
+        pnlStudio.Controls.Add(Panel21)
+        pnlStudio.Controls.Add(Panel22)
+        pnlStudio.Controls.Add(Panel23)
+        pnlStudio.Controls.Add(Panel24)
+        pnlStudio.Controls.Add(Label63)
+        pnlStudio.Location = New Point(0, 64)
+        pnlStudio.Name = "pnlStudio"
+        pnlStudio.Size = New Size(1443, 743)
+        pnlStudio.TabIndex = 10
+        pnlStudio.Visible = False
+        ' 
+        ' Panel19
+        ' 
+        Panel19.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel19.BorderStyle = BorderStyle.FixedSingle
+        Panel19.Controls.Add(Label51)
+        Panel19.Controls.Add(btnEris)
+        Panel19.Controls.Add(Label52)
+        Panel19.Controls.Add(PictureBox23)
+        Panel19.Location = New Point(1069, 470)
+        Panel19.Name = "Panel19"
+        Panel19.Size = New Size(315, 206)
+        Panel19.TabIndex = 6
+        ' 
+        ' Label51
+        ' 
+        Label51.AutoSize = True
+        Label51.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label51.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label51.Location = New Point(120, 140)
+        Label51.Name = "Label51"
+        Label51.Size = New Size(64, 21)
+        Label51.TabIndex = 5
+        Label51.Text = "$99.99"
+        Label51.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' btnEris
+        ' 
+        btnEris.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnEris.FlatAppearance.BorderSize = 0
+        btnEris.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnEris.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnEris.Location = New Point(86, 166)
+        btnEris.Name = "btnEris"
+        btnEris.Size = New Size(130, 35)
+        btnEris.TabIndex = 4
+        btnEris.Text = "ADD TO CART"
+        btnEris.UseVisualStyleBackColor = False
+        ' 
+        ' Label52
+        ' 
+        Label52.AutoSize = True
+        Label52.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label52.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label52.Location = New Point(5, 102)
+        Label52.Name = "Label52"
+        Label52.Size = New Size(307, 21)
+        Label52.TabIndex = 2
+        Label52.Text = "PreSonus Eris 3.5 Studio Monitors"
+        Label52.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox23
+        ' 
+        PictureBox23.BackgroundImage = CType(resources.GetObject("PictureBox23.BackgroundImage"), Image)
+        PictureBox23.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox23.Location = New Point(69, 6)
+        PictureBox23.Name = "PictureBox23"
+        PictureBox23.Size = New Size(174, 98)
+        PictureBox23.TabIndex = 2
+        PictureBox23.TabStop = False
+        ' 
+        ' Panel20
+        ' 
+        Panel20.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel20.BorderStyle = BorderStyle.FixedSingle
+        Panel20.Controls.Add(Label53)
+        Panel20.Controls.Add(btnJBL)
+        Panel20.Controls.Add(Label54)
+        Panel20.Controls.Add(PictureBox24)
+        Panel20.Location = New Point(568, 471)
+        Panel20.Name = "Panel20"
+        Panel20.Size = New Size(315, 206)
+        Panel20.TabIndex = 5
+        ' 
+        ' Label53
+        ' 
+        Label53.AutoSize = True
+        Label53.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label53.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label53.Location = New Point(110, 140)
+        Label53.Name = "Label53"
+        Label53.Size = New Size(73, 21)
+        Label53.TabIndex = 5
+        Label53.Text = "$759.00"
+        Label53.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' btnJBL
+        ' 
+        btnJBL.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnJBL.FlatAppearance.BorderSize = 0
+        btnJBL.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnJBL.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnJBL.Location = New Point(86, 166)
+        btnJBL.Name = "btnJBL"
+        btnJBL.Size = New Size(130, 35)
+        btnJBL.TabIndex = 4
+        btnJBL.Text = "ADD TO CART"
+        btnJBL.UseVisualStyleBackColor = False
+        ' 
+        ' Label54
+        ' 
+        Label54.AutoSize = True
+        Label54.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label54.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label54.Location = New Point(84, 101)
+        Label54.Name = "Label54"
+        Label54.Size = New Size(127, 42)
+        Label54.TabIndex = 2
+        Label54.Text = "JBL PRX415M" & vbCrLf & "Stage Monitor" & vbCrLf
+        Label54.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox24
+        ' 
+        PictureBox24.BackgroundImage = CType(resources.GetObject("PictureBox24.BackgroundImage"), Image)
+        PictureBox24.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox24.Location = New Point(-36, -41)
+        PictureBox24.Name = "PictureBox24"
+        PictureBox24.Size = New Size(387, 204)
+        PictureBox24.TabIndex = 2
+        PictureBox24.TabStop = False
+        ' 
+        ' Panel21
+        ' 
+        Panel21.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel21.BorderStyle = BorderStyle.FixedSingle
+        Panel21.Controls.Add(Label55)
+        Panel21.Controls.Add(btnStudioLive)
+        Panel21.Controls.Add(Label56)
+        Panel21.Controls.Add(PictureBox25)
+        Panel21.Location = New Point(56, 470)
+        Panel21.Name = "Panel21"
+        Panel21.Size = New Size(315, 206)
+        Panel21.TabIndex = 4
+        ' 
+        ' Label55
+        ' 
+        Label55.AutoSize = True
+        Label55.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label55.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label55.Location = New Point(110, 145)
+        Label55.Name = "Label55"
+        Label55.Size = New Size(82, 21)
+        Label55.TabIndex = 5
+        Label55.Text = "$1249.00"
+        Label55.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' btnStudioLive
+        ' 
+        btnStudioLive.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnStudioLive.FlatAppearance.BorderSize = 0
+        btnStudioLive.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnStudioLive.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnStudioLive.Location = New Point(86, 166)
+        btnStudioLive.Name = "btnStudioLive"
+        btnStudioLive.Size = New Size(130, 35)
+        btnStudioLive.TabIndex = 4
+        btnStudioLive.Text = "ADD TO CART"
+        btnStudioLive.UseVisualStyleBackColor = False
+        ' 
+        ' Label56
+        ' 
+        Label56.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label56.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label56.Location = New Point(6, 100)
+        Label56.Name = "Label56"
+        Label56.Size = New Size(299, 55)
+        Label56.TabIndex = 2
+        Label56.Text = "PreSonus StudioLive 16.0.2 Digital Mixer"
+        Label56.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox25
+        ' 
+        PictureBox25.BackgroundImage = CType(resources.GetObject("PictureBox25.BackgroundImage"), Image)
+        PictureBox25.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox25.Location = New Point(31, 6)
+        PictureBox25.Name = "PictureBox25"
+        PictureBox25.Size = New Size(235, 101)
+        PictureBox25.TabIndex = 2
+        PictureBox25.TabStop = False
+        ' 
+        ' Panel22
+        ' 
+        Panel22.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel22.BorderStyle = BorderStyle.FixedSingle
+        Panel22.Controls.Add(Label57)
+        Panel22.Controls.Add(btnWA44)
+        Panel22.Controls.Add(Label58)
+        Panel22.Controls.Add(PictureBox26)
+        Panel22.Location = New Point(1069, 125)
+        Panel22.Name = "Panel22"
+        Panel22.Size = New Size(315, 206)
+        Panel22.TabIndex = 3
+        ' 
+        ' Label57
+        ' 
+        Label57.AutoSize = True
+        Label57.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label57.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label57.Location = New Point(112, 140)
+        Label57.Name = "Label57"
+        Label57.Size = New Size(73, 21)
+        Label57.TabIndex = 5
+        Label57.Text = "$994.00"
+        Label57.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' btnWA44
+        ' 
+        btnWA44.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnWA44.FlatAppearance.BorderSize = 0
+        btnWA44.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnWA44.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnWA44.Location = New Point(86, 167)
+        btnWA44.Name = "btnWA44"
+        btnWA44.Size = New Size(130, 35)
+        btnWA44.TabIndex = 4
+        btnWA44.Text = "ADD TO CART"
+        btnWA44.UseVisualStyleBackColor = False
+        ' 
+        ' Label58
+        ' 
+        Label58.AutoSize = True
+        Label58.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label58.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label58.Location = New Point(24, 106)
+        Label58.Name = "Label58"
+        Label58.Size = New Size(280, 21)
+        Label58.TabIndex = 2
+        Label58.Text = "WA-44 Studio Ribbon Microphone"
+        Label58.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox26
+        ' 
+        PictureBox26.BackgroundImage = CType(resources.GetObject("PictureBox26.BackgroundImage"), Image)
+        PictureBox26.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox26.Location = New Point(39, -19)
+        PictureBox26.Name = "PictureBox26"
+        PictureBox26.Size = New Size(253, 159)
+        PictureBox26.TabIndex = 2
+        PictureBox26.TabStop = False
+        ' 
+        ' Panel23
+        ' 
+        Panel23.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel23.BorderStyle = BorderStyle.FixedSingle
+        Panel23.Controls.Add(Label59)
+        Panel23.Controls.Add(btnSM57)
+        Panel23.Controls.Add(Label60)
+        Panel23.Controls.Add(PictureBox27)
+        Panel23.Location = New Point(568, 126)
+        Panel23.Name = "Panel23"
+        Panel23.Size = New Size(315, 206)
+        Panel23.TabIndex = 2
+        ' 
+        ' Label59
+        ' 
+        Label59.AutoSize = True
+        Label59.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label59.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label59.Location = New Point(118, 140)
+        Label59.Name = "Label59"
+        Label59.Size = New Size(64, 21)
+        Label59.TabIndex = 5
+        Label59.Text = "$99.00"
+        Label59.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' btnSM57
+        ' 
+        btnSM57.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnSM57.FlatAppearance.BorderSize = 0
+        btnSM57.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSM57.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnSM57.Location = New Point(86, 166)
+        btnSM57.Name = "btnSM57"
+        btnSM57.Size = New Size(130, 35)
+        btnSM57.TabIndex = 4
+        btnSM57.Text = "ADD TO CART"
+        btnSM57.UseVisualStyleBackColor = False
+        ' 
+        ' Label60
+        ' 
+        Label60.AutoSize = True
+        Label60.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label60.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label60.Location = New Point(56, 105)
+        Label60.Name = "Label60"
+        Label60.Size = New Size(217, 21)
+        Label60.TabIndex = 2
+        Label60.Text = "SM57 Dynamic Microphone"
+        Label60.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox27
+        ' 
+        PictureBox27.BackgroundImage = CType(resources.GetObject("PictureBox27.BackgroundImage"), Image)
+        PictureBox27.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox27.Location = New Point(22, -3)
+        PictureBox27.Name = "PictureBox27"
+        PictureBox27.Size = New Size(271, 140)
+        PictureBox27.TabIndex = 2
+        PictureBox27.TabStop = False
+        ' 
+        ' Panel24
+        ' 
+        Panel24.BackColor = Color.FromArgb(CByte(108), CByte(110), CByte(88))
+        Panel24.BorderStyle = BorderStyle.FixedSingle
+        Panel24.Controls.Add(Label61)
+        Panel24.Controls.Add(btnSM58)
+        Panel24.Controls.Add(Label62)
+        Panel24.Controls.Add(PictureBox28)
+        Panel24.Location = New Point(56, 125)
+        Panel24.Name = "Panel24"
+        Panel24.Size = New Size(315, 206)
+        Panel24.TabIndex = 1
+        ' 
+        ' Label61
+        ' 
+        Label61.AutoSize = True
+        Label61.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label61.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label61.Location = New Point(114, 140)
+        Label61.Name = "Label61"
+        Label61.Size = New Size(64, 21)
+        Label61.TabIndex = 5
+        Label61.Text = "$99.00"
+        Label61.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' btnSM58
+        ' 
+        btnSM58.BackColor = Color.FromArgb(CByte(65), CByte(115), CByte(120))
+        btnSM58.FlatAppearance.BorderSize = 0
+        btnSM58.Font = New Font("Yu Gothic UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSM58.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        btnSM58.Location = New Point(86, 166)
+        btnSM58.Name = "btnSM58"
+        btnSM58.Size = New Size(130, 35)
+        btnSM58.TabIndex = 4
+        btnSM58.Text = "ADD TO CART"
+        btnSM58.UseVisualStyleBackColor = False
+        ' 
+        ' Label62
+        ' 
+        Label62.AutoSize = True
+        Label62.Font = New Font("Cascadia Mono", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label62.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label62.Location = New Point(49, 106)
+        Label62.Name = "Label62"
+        Label62.Size = New Size(217, 21)
+        Label62.TabIndex = 2
+        Label62.Text = "SM58 Dynamic Microphone"
+        Label62.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' PictureBox28
+        ' 
+        PictureBox28.BackgroundImage = CType(resources.GetObject("PictureBox28.BackgroundImage"), Image)
+        PictureBox28.BackgroundImageLayout = ImageLayout.Zoom
+        PictureBox28.Location = New Point(-6, -19)
+        PictureBox28.Name = "PictureBox28"
+        PictureBox28.Size = New Size(333, 159)
+        PictureBox28.TabIndex = 2
+        PictureBox28.TabStop = False
+        ' 
+        ' Label63
+        ' 
+        Label63.AutoSize = True
+        Label63.Font = New Font("Cascadia Mono", 72F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label63.ForeColor = Color.FromArgb(CByte(244), CByte(247), CByte(217))
+        Label63.Location = New Point(261, -2)
+        Label63.Name = "Label63"
+        Label63.Size = New Size(1006, 127)
+        Label63.TabIndex = 0
+        Label63.Text = "STUDIO/LIVE SOUND"
+        Label63.TextAlign = ContentAlignment.MiddleCenter
+        ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(62), CByte(66), CByte(58))
         ClientSize = New Size(1443, 806)
+        Controls.Add(Panel2)
+        Controls.Add(pnlNav)
+        Controls.Add(Panel5)
         Controls.Add(pnlAddedCart)
-        Controls.Add(pnlAbout)
         Controls.Add(pnlHome)
+        Controls.Add(pnlAbout)
+        Controls.Add(pnlStudio)
         Controls.Add(pnlCart)
         Controls.Add(pnlDrums)
         Controls.Add(pnlKeyboard)
         Controls.Add(pnlGuitar)
-        Controls.Add(Panel2)
-        Controls.Add(pnlNav)
-        Controls.Add(Panel5)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
@@ -2268,6 +2700,26 @@ Partial Class Form1
         Panel18.ResumeLayout(False)
         Panel18.PerformLayout()
         CType(PictureBox22, ComponentModel.ISupportInitialize).EndInit()
+        pnlStudio.ResumeLayout(False)
+        pnlStudio.PerformLayout()
+        Panel19.ResumeLayout(False)
+        Panel19.PerformLayout()
+        CType(PictureBox23, ComponentModel.ISupportInitialize).EndInit()
+        Panel20.ResumeLayout(False)
+        Panel20.PerformLayout()
+        CType(PictureBox24, ComponentModel.ISupportInitialize).EndInit()
+        Panel21.ResumeLayout(False)
+        Panel21.PerformLayout()
+        CType(PictureBox25, ComponentModel.ISupportInitialize).EndInit()
+        Panel22.ResumeLayout(False)
+        Panel22.PerformLayout()
+        CType(PictureBox26, ComponentModel.ISupportInitialize).EndInit()
+        Panel23.ResumeLayout(False)
+        Panel23.PerformLayout()
+        CType(PictureBox27, ComponentModel.ISupportInitialize).EndInit()
+        Panel24.ResumeLayout(False)
+        Panel24.PerformLayout()
+        CType(PictureBox28, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -2429,5 +2881,37 @@ Partial Class Form1
     Friend WithEvents lblAbout1 As Label
     Friend WithEvents pnlAddedCart As Panel
     Friend WithEvents lblAdded As Label
+    Friend WithEvents pnlStudio As Panel
+    Friend WithEvents Panel19 As Panel
+    Friend WithEvents Label51 As Label
+    Friend WithEvents btnEris As Button
+    Friend WithEvents PictureBox23 As PictureBox
+    Friend WithEvents Panel20 As Panel
+    Friend WithEvents Label53 As Label
+    Friend WithEvents btnJBL As Button
+    Friend WithEvents Label54 As Label
+    Friend WithEvents PictureBox24 As PictureBox
+    Friend WithEvents Panel21 As Panel
+    Friend WithEvents Label55 As Label
+    Friend WithEvents btnStudioLive As Button
+    Friend WithEvents Label56 As Label
+    Friend WithEvents PictureBox25 As PictureBox
+    Friend WithEvents Panel22 As Panel
+    Friend WithEvents Label57 As Label
+    Friend WithEvents btnWA44 As Button
+    Friend WithEvents Label58 As Label
+    Friend WithEvents PictureBox26 As PictureBox
+    Friend WithEvents Panel23 As Panel
+    Friend WithEvents Label59 As Label
+    Friend WithEvents btnSM57 As Button
+    Friend WithEvents Label60 As Label
+    Friend WithEvents PictureBox27 As PictureBox
+    Friend WithEvents Panel24 As Panel
+    Friend WithEvents Label61 As Label
+    Friend WithEvents btnSM58 As Button
+    Friend WithEvents Label62 As Label
+    Friend WithEvents PictureBox28 As PictureBox
+    Friend WithEvents Label63 As Label
+    Friend WithEvents Label52 As Label
 
 End Class
