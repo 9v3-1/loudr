@@ -105,7 +105,7 @@ Public Class Form1
         pnlDrums.Visible = False
         pnlKeyboard.Visible = False
 
-        pnlStudio.Visible = True
+        pnlStudio.Visible = True ' Shows the Studio/Live panel when the Studio/Live button is clicked
         pnlStudio.BringToFront()
 
     End Sub
