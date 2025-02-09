@@ -1,4 +1,5 @@
-﻿Imports WinFormsApp1.Form1
+﻿'Corozal Junior College - 8th Feb 2025 - Nasir Carillo, D'mitri Wu - CS206A
+Imports WinFormsApp1.Form1
 
 Public Class Form1
     Private cartItems As New List(Of CartItem)
