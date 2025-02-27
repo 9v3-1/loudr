@@ -2,38 +2,38 @@
 Imports WinFormsApp1.Form1
 
 Public Class Form1
-    Private cartItems As New List(Of CartItem)
-    Private WithEvents pnlAddedCartTimer As New Timer() ' Timer to hide the added to cart panel after a second
+    Private cartItems As New List(Of CartItem)          ' Create list of items "CartItem" that stores the item name and price
+    Private WithEvents pnlAddedCartTimer As New Timer() ' Timer to hide the added to cart notification after a second
     Public Sub New()
         InitializeComponent()
         pnlAddedCartTimer.Interval = 1000 ' Set the timer to 1 second
     End Sub
 
-    ' Event handler for the Timerevent
+    ' This is the method that gets called when the timer has run for 1 second
     Private Sub pnlAddedCartTimer_Tick(sender As Object, e As EventArgs) Handles pnlAddedCartTimer.Tick
-        pnlAddedCart.Visible = False
-        pnlAddedCartTimer.Stop()
+        pnlAddedCart.Visible = False ' Hides the "Added to cart notification'
+        pnlAddedCartTimer.Stop()     ' Stops the timer.
     End Sub
 
-    ' AddToCart method is defined only once and is used consitently on all event handlers 
+    ' AddToCart method is defined. Handles the adding of an item to the Items list and runs timer for the notification
     Private Sub AddToCart(itemName As String, price As Decimal)
-        cartItems.Add(New CartItem(itemName, price)) ' Add the item to the cart
-        UpdateCart() ' Method yo refresh cart UI
+        ' Item name and price price added to the item "CartItem". Adds CartItem to cartItems list.
+        cartItems.Add(New CartItem(itemName, price))
+        UpdateCart() '  The method that upadtes the cart "receipt" to show new items added
         pnlAddedCart.Visible = True
         pnlAddedCart.BringToFront()
-        pnlAddedCartTimer.Start() ' Start the timer
+        pnlAddedCartTimer.Start() ' Start the timer for "Added to cart" notification
     End Sub
 
-    ' method updates the cart UI with the current items and total price
+    ' Method updates the cart UI with the current items and total price and calculates total cost.
     Private Sub UpdateCart()
-        Dim totalPrice As Decimal = cartItems.Sum(Function(item) item.Price) ' Calculate total price
-        ' Update the cart UI with the items and total price
-        lstCart.Items.Clear() ' Clear the current items in the list
+        Dim totalPrice As Decimal = cartItems.Sum(Function(item) item.Price) ' Calculates total cost.
+        lstCart.Items.Clear() ' Clear the current items in the list to prepare for next item added.
         For Each item In cartItems
-            lstCart.Items.Add($"{item.ItemName} - ${item.Price}") ' Add each item to the list
+            lstCart.Items.Add($"{item.ItemName} - ${item.Price}") ' Add each item from the list to the receipt and displays it.
         Next
 
-        lblTotalPrice.Text = $"Total: ${totalPrice}" ' Update the total price label
+        lblTotalPrice.Text = $"Total: ${totalPrice}" ' Displays the total cost of all items.
     End Sub
 
     ' ------------------------Event handlers for navigation buttons-----------------------
